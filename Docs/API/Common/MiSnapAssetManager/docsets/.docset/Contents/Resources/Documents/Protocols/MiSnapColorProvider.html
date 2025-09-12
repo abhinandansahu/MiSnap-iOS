@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapColorProvider Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/MiSnapColorProvider" class="dashAnchor"></a>
+
+    <a title="MiSnapColorProvider Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapColorProvider Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapAssetManager.html">MiSnapAssetManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapBulletView.html">MiSnapBulletView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapBulletViewConfiguration.html">MiSnapBulletViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCameraShutterView.html">MiSnapCameraShutterView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCameraShutterViewConfiguration.html">MiSnapCameraShutterViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCancelView.html">MiSnapCancelView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCancelViewConfiguration.html">MiSnapCancelViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCheckBackTutorial.html">MiSnapCheckBackTutorial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCheckFrontTutorial.html">MiSnapCheckFrontTutorial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCheckboxView.html">MiSnapCheckboxView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCheckboxViewConfiguration.html">MiSnapCheckboxViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapColorDarkMode.html">MiSnapColorDarkMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapColorLightMode.html">MiSnapColorLightMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapColors.html">MiSnapColors</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapDocumentLabelConfiguration.html">MiSnapDocumentLabelConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapDocumentOutlineConfiguration.html">MiSnapDocumentOutlineConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapDocumentSVGView.html">MiSnapDocumentSVGView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCountdownView.html">MiSnapFacialCaptureCountdownView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCountdownViewConfiguration.html">MiSnapFacialCaptureCountdownViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureGuideConfiguration.html">MiSnapFacialCaptureGuideConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureGuideView.html">MiSnapFacialCaptureGuideView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureOutlineConfiguration.html">MiSnapFacialCaptureOutlineConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureTutorial.html">MiSnapFacialCaptureTutorial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureVignetteConfiguration.html">MiSnapFacialCaptureVignetteConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapGlareView.html">MiSnapGlareView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapGlareViewConfiguration.html">MiSnapGlareViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapGuideView.html">MiSnapGuideView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapGuideViewConfiguration.html">MiSnapGuideViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapHelpView.html">MiSnapHelpView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapHelpViewConfiguration.html">MiSnapHelpViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapHintView.html">MiSnapHintView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapHintViewConfiguration.html">MiSnapHintViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapIDBackTutorial.html">MiSnapIDBackTutorial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapIDFrontTutorial.html">MiSnapIDFrontTutorial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLabel.html">MiSnapLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLabelConfiguration.html">MiSnapLabelConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapPassportQRTutorial.html">MiSnapPassportQRTutorial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapPassportTutorial.html">MiSnapPassportTutorial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapRecordingIndicatorView.html">MiSnapRecordingIndicatorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapRecordingIndicatorViewConfiguration.html">MiSnapRecordingIndicatorViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapSVGView.html">MiSnapSVGView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapStatefulView.html">MiSnapStatefulView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapStatefulViewConfiguration.html">MiSnapStatefulViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapStatelessView.html">MiSnapStatelessView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapStatelessViewConfiguration.html">MiSnapStatelessViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapSuccessCheckmarkView.html">MiSnapSuccessCheckmarkView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapSuccessCheckmarkViewConfiguration.html">MiSnapSuccessCheckmarkViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapSuccessConfiguration.html">MiSnapSuccessConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapTorchView.html">MiSnapTorchView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapTorchViewConfiguration.html">MiSnapTorchViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapView.html">MiSnapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapViewConfiguration.html">MiSnapViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapViewLocation.html">MiSnapViewLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVignetteConfiguration.html">MiSnapVignetteConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureFailureViewConfiguration.html">MiSnapVoiceCaptureFailureViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureNeutralViewConfiguration.html">MiSnapVoiceCaptureNeutralViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureStatusView.html">MiSnapVoiceCaptureStatusView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureStatusViewConfiguration.html">MiSnapVoiceCaptureStatusViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureSuccessViewConfiguration.html">MiSnapVoiceCaptureSuccessViewConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureTutorial.html">MiSnapVoiceCaptureTutorial</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BulletType.html">BulletType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapAssetStyle.html">MiSnapAssetStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCheckboxState.html">MiSnapCheckboxState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapDocumentOrientationMode.html">MiSnapDocumentOrientationMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureCountdownStyle.html">MiSnapFacialCaptureCountdownStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureOutlineColorStyle.html">MiSnapFacialCaptureOutlineColorStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureOutlineState.html">MiSnapFacialCaptureOutlineState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureVignetteStyle.html">MiSnapFacialCaptureVignetteStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapGuideAlignment.html">MiSnapGuideAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapGuideDocumentType.html">MiSnapGuideDocumentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapGuideOrientationMode.html">MiSnapGuideOrientationMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapHintStyle.html">MiSnapHintStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewHorizontalAlignment.html">MiSnapViewHorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewParent.html">MiSnapViewParent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewState.html">MiSnapViewState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewVerticalAlignment.html">MiSnapViewVerticalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapVignetteStyle.html">MiSnapVignetteStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapVoiceCaptureViewStatus.html">MiSnapVoiceCaptureViewStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CGFloat.html">CGFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CGSize.html">CGSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIEdgeInsets.html">UIEdgeInsets</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIScreen.html">UIScreen</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapColorProvider.html">MiSnapColorProvider</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapColorProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MiSnapColorProvider</span></code></pre>
+
+                </div>
+              </div>
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)primary"></a>
+                    <a name="//apple_ref/swift/Property/primary" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)primary">primary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">primary</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)onPrimary"></a>
+                    <a name="//apple_ref/swift/Property/onPrimary" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)onPrimary">onPrimary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onPrimary</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)secondary"></a>
+                    <a name="//apple_ref/swift/Property/secondary" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)secondary">secondary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">secondary</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)onSecondary"></a>
+                    <a name="//apple_ref/swift/Property/onSecondary" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)onSecondary">onSecondary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onSecondary</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)background"></a>
+                    <a name="//apple_ref/swift/Property/background" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)background">background</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">background</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)onBackground"></a>
+                    <a name="//apple_ref/swift/Property/onBackground" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)onBackground">onBackground</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onBackground</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)surface"></a>
+                    <a name="//apple_ref/swift/Property/surface" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)surface">surface</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">surface</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)onSurface"></a>
+                    <a name="//apple_ref/swift/Property/onSurface" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)onSurface">onSurface</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onSurface</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanSkin"></a>
+                    <a name="//apple_ref/swift/Property/defaultHumanSkin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanSkin">defaultHumanSkin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">defaultHumanSkin</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanSkinShadow"></a>
+                    <a name="//apple_ref/swift/Property/defaultHumanSkinShadow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanSkinShadow">defaultHumanSkinShadow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">defaultHumanSkinShadow</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanHair"></a>
+                    <a name="//apple_ref/swift/Property/defaultHumanHair" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanHair">defaultHumanHair</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">defaultHumanHair</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanEyes"></a>
+                    <a name="//apple_ref/swift/Property/defaultHumanEyes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanEyes">defaultHumanEyes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">defaultHumanEyes</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanClothes"></a>
+                    <a name="//apple_ref/swift/Property/defaultHumanClothes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)defaultHumanClothes">defaultHumanClothes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">defaultHumanClothes</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentHands"></a>
+                    <a name="//apple_ref/swift/Property/helpDocumentHands" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentHands">helpDocumentHands</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDocumentHands</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentHandsShadow"></a>
+                    <a name="//apple_ref/swift/Property/helpDocumentHandsShadow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentHandsShadow">helpDocumentHandsShadow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDocumentHandsShadow</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentBackground"></a>
+                    <a name="//apple_ref/swift/Property/helpDocumentBackground" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentBackground">helpDocumentBackground</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDocumentBackground</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentContent"></a>
+                    <a name="//apple_ref/swift/Property/helpDocumentContent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentContent">helpDocumentContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDocumentContent</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpOnDocumentContent"></a>
+                    <a name="//apple_ref/swift/Property/helpOnDocumentContent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpOnDocumentContent">helpOnDocumentContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpOnDocumentContent</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentOutline"></a>
+                    <a name="//apple_ref/swift/Property/helpDocumentOutline" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentOutline">helpDocumentOutline</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDocumentOutline</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentHighlight"></a>
+                    <a name="//apple_ref/swift/Property/helpDocumentHighlight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDocumentHighlight">helpDocumentHighlight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDocumentHighlight</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDevice"></a>
+                    <a name="//apple_ref/swift/Property/helpDevice" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDevice">helpDevice</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDevice</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDeviceGlare"></a>
+                    <a name="//apple_ref/swift/Property/helpDeviceGlare" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDeviceGlare">helpDeviceGlare</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDeviceGlare</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDeviceDocumentBackground"></a>
+                    <a name="//apple_ref/swift/Property/helpDeviceDocumentBackground" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpDeviceDocumentBackground">helpDeviceDocumentBackground</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpDeviceDocumentBackground</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceHair"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceHair" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceHair">helpFaceHair</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceHair</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceSkin"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceSkin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceSkin">helpFaceSkin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceSkin</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceSkinShadow"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceSkinShadow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceSkinShadow">helpFaceSkinShadow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceSkinShadow</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceEyes"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceEyes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceEyes">helpFaceEyes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceEyes</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceClothes"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceClothes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceClothes">helpFaceClothes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceClothes</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceFeatures"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceFeatures" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceFeatures">helpFaceFeatures</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceFeatures</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceFeaturesDetail"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceFeaturesDetail" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceFeaturesDetail">helpFaceFeaturesDetail</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceFeaturesDetail</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceHandIcon"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceHandIcon" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceHandIcon">helpFaceHandIcon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceHandIcon</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceHandIconBorder"></a>
+                    <a name="//apple_ref/swift/Property/helpFaceHandIconBorder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpFaceHandIconBorder">helpFaceHandIconBorder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpFaceHandIconBorder</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHair"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceHair" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHair">helpVoiceHair</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceHair</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceSkin"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceSkin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceSkin">helpVoiceSkin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceSkin</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceSkinShadow"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceSkinShadow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceSkinShadow">helpVoiceSkinShadow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceSkinShadow</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceEyes"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceEyes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceEyes">helpVoiceEyes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceEyes</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceClothes"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceClothes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceClothes">helpVoiceClothes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceClothes</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceDoNotSymbol"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceDoNotSymbol" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceDoNotSymbol">helpVoiceDoNotSymbol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceDoNotSymbol</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceDialogBox"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceDialogBox" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceDialogBox">helpVoiceDialogBox</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceDialogBox</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceDialogBoxBorder"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceDialogBoxBorder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceDialogBoxBorder">helpVoiceDialogBoxBorder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceDialogBoxBorder</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceDialogBoxContents"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceDialogBoxContents" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceDialogBoxContents">helpVoiceDialogBoxContents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceDialogBoxContents</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceProfileSilhouettes"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceProfileSilhouettes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceProfileSilhouettes">helpVoiceProfileSilhouettes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceProfileSilhouettes</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceBluetooth"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceBluetooth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceBluetooth">helpVoiceBluetooth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceBluetooth</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHeadsetDeviceBase"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceHeadsetDeviceBase" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHeadsetDeviceBase">helpVoiceHeadsetDeviceBase</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceHeadsetDeviceBase</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHeadsetDeviceBaseShadow"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceHeadsetDeviceBaseShadow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHeadsetDeviceBaseShadow">helpVoiceHeadsetDeviceBaseShadow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceHeadsetDeviceBaseShadow</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHeadsetDeviceFeature"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceHeadsetDeviceFeature" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHeadsetDeviceFeature">helpVoiceHeadsetDeviceFeature</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceHeadsetDeviceFeature</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHeadsetDeviceFeatureShadow"></a>
+                    <a name="//apple_ref/swift/Property/helpVoiceHeadsetDeviceFeatureShadow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(pl)MiSnapColorProvider(py)helpVoiceHeadsetDeviceFeatureShadow">helpVoiceHeadsetDeviceFeatureShadow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpVoiceHeadsetDeviceFeatureShadow</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

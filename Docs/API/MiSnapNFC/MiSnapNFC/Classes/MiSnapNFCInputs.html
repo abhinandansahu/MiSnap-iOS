@@ -92,6 +92,9 @@
                 <a class="nav-group-task-link" href="../Enums/MiSnapNFCKey.html">MiSnapNFCKey</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapNFCProgressIndicator.html">MiSnapNFCProgressIndicator</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapNFCTagError.html">MiSnapNFCTagError</a>
               </li>
             </ul>
@@ -239,7 +242,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">mrzString</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">mrzString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -305,6 +308,90 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(py)pin"></a>
+                    <a name="//apple_ref/swift/Property/pin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(py)pin">pin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PIN required to access data for certain eDocs</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">pin</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(py)can"></a>
+                    <a name="//apple_ref/swift/Property/can" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(py)can">can</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CAN required to resume suspended PIN</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">can</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(py)puk"></a>
+                    <a name="//apple_ref/swift/Property/puk" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(py)puk">puk</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PUK required to unblock blocked PIN</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">puk</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(py)description"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(py)description">description</a>
@@ -323,6 +410,36 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(im)resetPinRelated"></a>
+                    <a name="//apple_ref/swift/Method/resetPinRelated()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs(im)resetPinRelated">resetPinRelated()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets PIN-related properties (PIN, CAN, PUK)</p>
+
+<p>Should be called every time a manual entry screen is presented to clear old values</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetPinRelated</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
