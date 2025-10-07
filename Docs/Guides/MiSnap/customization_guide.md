@@ -176,6 +176,16 @@ let template = MiSnapConfiguration()
     }
 ```
 
+By default, `.checkFront`, `.checkBack`, and `.generic` document types display a text-based instruction tutorial. For customers that would like to present an image-based tutorial for these document types, the following customization needs to be applied in addition to following steps above:
+```Swift
+let template = MiSnapConfiguration()
+    .withCustomTutorial { tutorial in
+        tutorial.instruction.checkFront.style = .image
+        tutorial.instruction.checkBack.style = .image
+        tutorial.instruction.generic.style = .image
+    }
+```
+
 ## Implementing custom tutorial screens
 
 ### 1. Implement custom Introductory instruction, Help, Timeout, and Review screens

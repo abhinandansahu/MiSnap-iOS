@@ -26,7 +26,7 @@ public enum MobileVerifyAgentAssistRequestError: Error {
         }
     }
 }
-
+// swiftlint:disable:next type_name
 class MobileVerifyAgentAssistDocumentAuthenticationRequest: NSObject {
     private var transactionRequestId: String = ""
     private var customerReferenceId: String = ""

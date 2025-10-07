@@ -80,12 +80,26 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public enum MiSnapNFCUxPinEntry : Swift.Int {
+  case notSet = 0
+  case enabled = 1
+  case disabled = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCUxParameters : ObjectiveC.NSObject {
   @objc public var autoDismiss: Swift.Bool
   @objc public var navigationBarHidden: Swift.Bool
+  @objc public var pinEntry: MiSnapNFCUxPinEntry
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
   @objc override dynamic public init()
   @objc deinit
 }
+extension MiSnapNFCUxPinEntry : Swift.Equatable {}
+extension MiSnapNFCUxPinEntry : Swift.Hashable {}
+extension MiSnapNFCUxPinEntry : Swift.RawRepresentable {}

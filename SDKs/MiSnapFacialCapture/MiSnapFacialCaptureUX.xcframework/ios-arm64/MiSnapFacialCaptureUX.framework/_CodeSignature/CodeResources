@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapFacialCaptureUX-Swift.h</key>
 		<data>
-		92IlR/zOuNo6KVWuHreCe+Yt6xU=
+		/ar/csm8UCw4HNuKA2oSopLYgK4=
 		</data>
 		<key>Headers/MiSnapFacialCaptureUX.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7S+nuJ5ZRtjF8MiBjzfC/u6Lw+g=
+		Y0839svFx5nlkYFx9fJvZXutd+4=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		S/32MVM/HPTjKJaez1wxH6VeocU=
+		OA2lQOpVOkalU9gQsTHnNqnyuMo=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		1q5NhjQQQyLhhIqDJNuZda+Km/A=
+		MgENExJsRgAlBMtI0t8mWTb8WqU=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		1q5NhjQQQyLhhIqDJNuZda+Km/A=
+		MgENExJsRgAlBMtI0t8mWTb8WqU=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		LbFvSuC1oNQ+WEf1FpWQHaIflsI=
+		1333okbxLh2Qzdd++pxLS0c8PTA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+lbbX1mS9Vy4wOXTqAA9N6It1dSZ/Voyyjp4WSbT508=
+			RlAfW44OHjpjIAYtXitdMgM/JrtyM4f36TcxvWffIQg=
 			</data>
 		</dict>
 		<key>Headers/MiSnapFacialCaptureUX.h</key>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sDtkSYRIVMZO6CvIoK7JPEeeHtgK3KN9qlVJEAzsRoI=
+			Tm7msQgMq+e2B3hvDCKT+g7/wOmBnT9LkPkXCpP70/A=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0usIks1Rxjbv0aVEBcCL3bpCHhH97INIfFsnsD7nNIc=
+			cA5865bWyAfPUuhD0gsFGekZJHmkivUO5EWS17UZdgI=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0usIks1Rxjbv0aVEBcCL3bpCHhH97INIfFsnsD7nNIc=
+			cA5865bWyAfPUuhD0gsFGekZJHmkivUO5EWS17UZdgI=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			co6Xt/Qeyon5VIrQFtWPTVcM0aQpFknAMfGe1uWEa3k=
+			wmmtUXDnYstByob4gsYtsQ94mMSc+2lfTw8H63WKXTY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

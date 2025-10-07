@@ -399,6 +399,7 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX26MiSnapNFCScanConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+enum MiSnapNFCUxPinEntry : NSInteger;
 
 /// UX parameters used during the chip reading process
 SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
@@ -410,10 +411,22 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
 /// Indicates whether navigation bar should be hidden when a view controller is embedded into navigation controller
 /// Default: <code>false</code>
 @property (nonatomic) BOOL navigationBarHidden;
+/// PIN entry
+/// Default: <code>.notSet</code>
+@property (nonatomic) enum MiSnapNFCUxPinEntry pinEntry;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+typedef SWIFT_ENUM(NSInteger, MiSnapNFCUxPinEntry, open) {
+/// PIN entry requirement is not set and will be automatically determined
+  MiSnapNFCUxPinEntryNotSet = 0,
+/// Indicates that a PIN entry screen should be presented regardless of internal determination
+  MiSnapNFCUxPinEntryEnabled = 1,
+/// Indicates that a PIN entry screen should NOT be presented regardless of internal determination
+  MiSnapNFCUxPinEntryDisabled = 2,
+};
 
 @protocol MiSnapNFCViewControllerDelegate;
 @class NSCoder;
@@ -878,6 +891,7 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX26MiSnapNFCScanConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+enum MiSnapNFCUxPinEntry : NSInteger;
 
 /// UX parameters used during the chip reading process
 SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
@@ -889,10 +903,22 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
 /// Indicates whether navigation bar should be hidden when a view controller is embedded into navigation controller
 /// Default: <code>false</code>
 @property (nonatomic) BOOL navigationBarHidden;
+/// PIN entry
+/// Default: <code>.notSet</code>
+@property (nonatomic) enum MiSnapNFCUxPinEntry pinEntry;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+typedef SWIFT_ENUM(NSInteger, MiSnapNFCUxPinEntry, open) {
+/// PIN entry requirement is not set and will be automatically determined
+  MiSnapNFCUxPinEntryNotSet = 0,
+/// Indicates that a PIN entry screen should be presented regardless of internal determination
+  MiSnapNFCUxPinEntryEnabled = 1,
+/// Indicates that a PIN entry screen should NOT be presented regardless of internal determination
+  MiSnapNFCUxPinEntryDisabled = 2,
+};
 
 @protocol MiSnapNFCViewControllerDelegate;
 @class NSCoder;

@@ -6,7 +6,7 @@
 //  Copyright © 2022 Mitek Systems Inc. All rights reserved.
 //
 
-// swiftlint:disable function_parameter_count identifier_name line_length
+// swiftlint:disable identifier_name line_length
 
 import UIKit
 
@@ -564,7 +564,7 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
         if selfieEvidenceSet {
             var selfieDictionary: [String : String] = [
                 "type" : "Biometric",
-                "biometricType" : "Selfie",
+                "biometricType" : "Selfie"
             ]
             if let aiBasedRts = selfieEvidence.aiBasedRts {
                 selfieDictionary["data"] = aiBasedRts
@@ -600,4 +600,4 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
     }
 }
 
-// swiftlint:enable function_parameter_count identifier_name line_length
+// swiftlint:enable identifier_name line_length

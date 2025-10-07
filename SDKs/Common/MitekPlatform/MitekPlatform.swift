@@ -293,7 +293,7 @@ public class MitekPlatform: NSObject {
         
         submit(to: path, method: .delete, api: api, completed: completed)
     }
-    
+    // swiftlint:disable line_length
     private func submit(requestDictionary: [String : Any]? = nil, to path: String, method: MitekPlatformHttpMethod, api: MitekPlatformAPI, completed: @escaping ([String: Any]?, MitekPlatformError?) -> Void) {
         let fullPath: String
         switch api {
@@ -302,7 +302,7 @@ public class MitekPlatform: NSObject {
                 return completed(nil, .error("A valid URL has to be passed into `MitekPlatformConfiguration` initializer for V2 API. Got \"\(configurationV2.url)\"", -1))
             }
             guard configurationV2.id.isValid && configurationV2.secret.isValid else {
-                return completed(nil, .error("Valid credentials have to be passed into `MitekPlatformConfiguration` initializer for V2 API. Got id: \"\(configurationV2.id)\", secret: \"\(configurationV2.secret)\"", -1))
+                return completed(nil, .error("Valid credentials have to be passed into `MitekPlatformConfiguration` initializer for V2 API.", -1))
             }
             fullPath = configurationV2.url + path
         case .v3:
@@ -310,7 +310,7 @@ public class MitekPlatform: NSObject {
                 return completed(nil, .error("A valid URL has to be passed into `MitekPlatformConfiguration` initializer for V3 API. Got \"\(configurationV3.url)\"", -1))
             }
             guard configurationV3.id.isValid && configurationV3.secret.isValid else {
-                return completed(nil, .error("Valid credentials have to be passed into `MitekPlatformConfiguration` initializer for V3 API. Got id: \"\(configurationV3.id)\", secret: \"\(configurationV3.secret)\"", -1))
+                return completed(nil, .error("Valid credentials have to be passed into `MitekPlatformConfiguration` initializer for V3 API.", -1))
             }
             fullPath = configurationV3.url + path
         }
@@ -369,6 +369,7 @@ public class MitekPlatform: NSObject {
             }
         }
     }
+    // swiftlint:enable line_length
     
     private func submit(request: URLRequest, dataTask: URLSessionDataTask?, completed: @escaping ([String: Any]?, MitekPlatformError?) -> Void) {
         var dataTask = dataTask

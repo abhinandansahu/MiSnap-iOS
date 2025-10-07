@@ -58,7 +58,12 @@
 
 // Review screen
 "misnap_facial_capture_ux_tutorial_review_voiceover"                    = "Are you happy with your selfie or would you like to retake it?";
+"misnap_facial_capture_ux_tutorial_review_voiceover_2"                  = "Image of the selfie is on the screen. Seek assistance if you would like the image reviewed, or accept with the button.";
 "misnap_facial_capture_ux_tutorial_review_message"                      = "Are you happy with your selfie?";
+
+// Common tutorial
+"misnap_facial_capture_ux_tutorial_tip"                                 = "Here's a tip";
+"misnap_facial_capture_ux_tutorial_tips"                                = "Here are a few tips";
 
 // Success
 "misnap_facial_capture_ux_countdown_three"                              = "Three";

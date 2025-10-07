@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapCore-Swift.h</key>
 		<data>
-		uJdivdIxxtiQhpngwZIYwxm0ec4=
+		wMH9hqNofUDGCt5suZO1SUS580A=
 		</data>
 		<key>Headers/MiSnapCore.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6dqDzUpfnxc+hwfbd0pDFR8TwiU=
+		wJfXuk+sHMHdqbGHxMKZjeFsOQA=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		N7jJS3Xda+MVw+21PcS7kgd0tPI=
+		jne+NQQEiO/qts6LFiLbNLPLtwE=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		735JRKERJB1cTUmbQOovS3POwqw=
+		5brua6R9RNgQglpPg/Mf7m3DeMc=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		735JRKERJB1cTUmbQOovS3POwqw=
+		5brua6R9RNgQglpPg/Mf7m3DeMc=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GUOzyw6kasxtYCsfXIoxz59zvOo=
+		/ITyA7+T2H3nBBz/cgFm8sBBiNQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cdmah1v9W0Qj7dg+IEn0SQs3JgNydx85RTIEtlkvn1o=
+			IHloJmM5u69RRIHKjns5b/+49qVrGcEl1tVovyaUgyE=
 			</data>
 		</dict>
 		<key>Headers/MiSnapCore.h</key>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SOfBel3XIe2loGYMFOsa1qCmFwERFikjq4gIq2pfOUo=
+			ZujJkBLPpKWPAyAUQXhBhf+lWIbwM+mM6UBkVOPnWKw=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EShiPvD42ilBykqWa086exnnT0F930YoepF1JoaPWS0=
+			z6y9xurTG/jHCeJmtkPQC1k5Ddq3GYjS7rNm8ru1T+o=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EShiPvD42ilBykqWa086exnnT0F930YoepF1JoaPWS0=
+			z6y9xurTG/jHCeJmtkPQC1k5Ddq3GYjS7rNm8ru1T+o=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TJWBPUXT98Wq4m2kkXYnSlG9MUI85TqpVAceGKMueFw=
+			vROVpHYsiTdk/h5lqxTrXnb/AyIIhi58WixylNBAMKo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

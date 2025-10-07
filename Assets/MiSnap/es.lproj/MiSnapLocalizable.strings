@@ -83,6 +83,13 @@
 
 "misnap_tutorial_auto"                  = "Captaremos la foto por usted.";
 "misnap_tutorial_manual"                = "Toca el botón de disparo cuando estés listo.";
+"misnap_tutorial_tip"                   = "Aquí hay un consejo";
+"misnap_tutorial_tips"                  = "Aquí hay algunos consejos";
+
+"misnap_tutorial_timeout_header"        = "Se acabó el tiempo, no pudimos tomar su foto…";
+
+"misnap_tutorial_review_check"          = "La imagen del cheque está en la pantalla. Solicita ayuda si deseas que se revise la imagen, o acéptala con el botón.";
+"misnap_tutorial_review_document"       = "La imagen del documento está en la pantalla. Solicita ayuda si deseas que se revise la imagen, o acéptala con el botón.";
 
 // Failover Reasons
 "misnap_status_too_dark_timeout"                = "Coloca el documento en una superficie bien iluminada";

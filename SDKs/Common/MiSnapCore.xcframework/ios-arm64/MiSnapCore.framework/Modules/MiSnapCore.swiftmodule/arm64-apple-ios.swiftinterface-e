@@ -49,6 +49,7 @@ import _SwiftConcurrencyShims
   case timeoutVerbose
   case startVerbose
   case readVerbose
+  case restartPollingVerbose
   case unknownTagVerbose
   case paceSupportVerbose
   case caSupportVerbose

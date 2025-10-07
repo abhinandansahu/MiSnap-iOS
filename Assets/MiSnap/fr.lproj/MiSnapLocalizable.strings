@@ -83,6 +83,14 @@
 
 "misnap_tutorial_auto"                  = "Nous allons prendre la photo pour vous.";
 "misnap_tutorial_manual"                = "Appuyez sur le bouton de l’obturateur lorsque vous êtes prêt.";
+"misnap_tutorial_tip"                   = "Voici un conseil";
+"misnap_tutorial_tips"                  = "Voici quelques conseils";
+
+"misnap_tutorial_timeout_header"        = "Le temps est écoulé, nous n\'avons pas pu prendre votre photo…";
+
+
+"misnap_tutorial_review_check"          = "L'image du chèque est affichée à l'écran. Demandez de l'aide si vous souhaitez que l'image soit vérifiée ou acceptez-la en cliquant sur le bouton.";
+"misnap_tutorial_review_document"       = "L'image du document est affichée à l'écran. Demandez de l'aide si vous souhaitez la consulter ou acceptez en cliquant sur le bouton.";
 
 // Failover Reasons
 "misnap_status_too_dark_timeout"                = "Placez le document sur une surface bien éclairée";

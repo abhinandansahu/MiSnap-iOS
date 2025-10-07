@@ -21,6 +21,7 @@
 "misnap_nfc_ux_button_cancel"                               = "Cancel";
 "misnap_nfc_ux_button_scan"                                 = "Start";
 "misnap_nfc_ux_button_skip"                                 = "Skip";
+"misnap_nfc_ux_button_continue"                             = "Continue";
 
 "misnap_nfc_ux_alert_message_cancel"                        = "Cancel the entire process?";
 "misnap_nfc_ux_alert_message_skip"                          = "Skip to the next step?";
@@ -61,6 +62,7 @@
 "misnap_nfc_sdk_error_more_than_one_tag"                    = "More than 1 tag found. Please present only 1 tag";
 "misnap_nfc_sdk_error_invalid_tag"                          = "Tag not valid";
 "misnap_nfc_sdk_error_connection_not_established"           = "Connection error. Please try again.";
-"misnap_nfc_sdk_error_system_resource_unavailable"          = "Sorry, there was a system error.\nPlease reboot your device and re-start the flow";
-"misnap_nfc_sdk_error_system_error"                         = "Sorry, there was a system error.\nPlease try again and reboot a device if error persists";
+"misnap_nfc_sdk_error_system_resource_unavailable"          = "Sorry, there was a system error.\nPlease wait 20 seconds then retry.\nReboot your device if error persists";
+"misnap_nfc_sdk_error_session_invalidated"                  = "Sorry, there was a system error.\nPlease wait 20 seconds then retry.\nReboot your device if error persists";
+"misnap_nfc_sdk_error_system_error"                         = "Sorry, there was a system error.\nPlease try again and reboot your device if error persists";
 "misnap_nfc_sdk_error_unknown"                              = "Unknown error";
