@@ -60,7 +60,7 @@ typedef NS_ENUM(NSInteger, MiSnapFacialCaptureTutorialMode) {
     MiSnapFacialCaptureTutorialModeReview
 };
 /**
- AI based RTS payload size
+ AI-based RTS payload size
  */
 typedef NS_ENUM(NSInteger, MiSnapFacialCaptureAiBasedRtsPayloadSize) {
     /**
@@ -184,7 +184,7 @@ MiSnapFacialCaptureParameters is a class that defines an interface for controlli
  */
 @property (nonatomic, readwrite) NSTimeInterval analysisDelayTime;
 /**
- Indicates whether an AI based RTS payload should be collected
+ Indicates whether an AI-based RTS payload should be collected
  
  Default: `FALSE`
  

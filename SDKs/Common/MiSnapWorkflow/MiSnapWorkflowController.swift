@@ -250,10 +250,6 @@ class MiSnapWorkflowController: NSObject {
     
     private var completedStep: MiSnapWorkflowStep = .none
     private var step: MiSnapWorkflowStep = .none
-    #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
-    private var nfcDocumentType: MiSnapNFCDocumentType = .none
-    private var nfcChipLocation: MiSnapNFCChipLocation = .noChip
-    #endif
     private var mutableSteps: [MiSnapWorkflowStep]
     
     private var mrzString: String = ""
@@ -319,11 +315,6 @@ class MiSnapWorkflowController: NSObject {
         case .nfc:
             if #available(iOS 13, *) {
                 viewController = controllerFactory.buildMiSnapNFCVC(mrzString: mrzString,
-                                                                    documentNumber: documentNumber,
-                                                                    dateOfBirth: dateOfBirth,
-                                                                    dateOfExpiry: dateOfExpiry,
-                                                                    documentType: nfcDocumentType,
-                                                                    chipLocation: nfcChipLocation,
                                                                     delegate: self)
             } else {
                 viewController = UIViewController.init()
@@ -388,7 +379,7 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
         if let extraction = result.extraction {
             if let mrzString = extraction.mrzString {
                 self.mrzString = mrzString
-            } else if let barcodeString = extraction.barcodeString {
+            } else if let barcodeString = extraction.barcodeString, barcodeString.count == 30, barcodeString.lowercased().hasPrefix("d1") {
                 self.mrzString = barcodeString
             }
             if let documentNumber = extraction.documentNumber {
@@ -471,25 +462,10 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     private func shouldAddNfcStep() -> Bool {
         guard !self.mutableSteps.contains(.nfc) else { return false }
-        if !mrzString.isEmpty, !documentNumber.isEmpty, dateOfBirth.count == 6, dateOfExpiry.count == 6 {
-            if completedStep == .passport {
-                nfcDocumentType = .passport
-            } else {
-                nfcDocumentType = .id
-            }
-            
-            if #available(iOS 13, *) {
-                nfcChipLocation = MiSnapNFCChipLocator.chipLocation(mrzString: mrzString, documentNumber: documentNumber, dateOfBirth: dateOfBirth, dateOfExpiry: dateOfExpiry)
-                if nfcChipLocation != .noChip {
-                    return true
-                }
-            }
-            
-        } else if mrzString.count == 30 {
-            nfcDocumentType = .dl
-            return true
+        
+        if #available(iOS 13, *) {
+            return MiSnapNFCChipLocator.chipLocation(mrzString: mrzString) != .noChip
         }
-
         return false
     }
     #endif

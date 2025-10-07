@@ -29,10 +29,8 @@ import MiSnapAssetManager
     
     private var interruptionReason: MiSnapVoiceCaptureControllerInterruptionReason = .none
     private var licenseStatus: MiSnapLicenseStatus = .none
-    /**
-     Both `phraseLabel` and `hintLabel` are added for making this custom view controller an MVP.
-     Delete or modify them to your liking
-     */
+    // Both `phraseLabel` and `hintLabel` are added for making this custom view controller an MVP.
+    // Delete or modify them to your liking
     private var phraseLabel = UILabel()
     private var hintLabel = UILabel()
     
@@ -131,9 +129,7 @@ extension CustomVoiceCaptureViewController {
      Configure your UI here
      */
     private func configureUI() {
-        /**
-         Delete sample functions below and add your UI here
-         */
+        // Delete sample functions below and add your UI here
         if #available(iOS 13.0, *) {
             view.backgroundColor = .systemBackground
         } else {
@@ -147,9 +143,7 @@ extension CustomVoiceCaptureViewController {
      Call this function to deinitialize all objects to avoid memory leaks
      */
     private func shutdown() {
-        /**
-         Controller is going to be nil if licesne is not valid
-         */
+        // Controller is going to be nil if licesne is not valid
         if licenseStatus == .none {
             controller.shutdown()
         }
@@ -173,26 +167,18 @@ extension CustomVoiceCaptureViewController: MiSnapVoiceCaptureControllerDelegate
      Called when license status is anything but valid or expired
      */
     public func miSnapVoiceCaptureControllerLicenseStatus(_ status: MiSnapLicenseStatus) {
-        /**
-         Handle invalid license status here
-         */
+        // Handle invalid license status here
         licenseStatus = status
-        /**
-         Delete sample function below
-         */
+        // Delete sample function below
         updateUIForInvalidLicense(status: status)
     }
     /**
      Called when a controller is started
      */
     public func miSnapVoiceCaptureControllerDidStart() {
-        /**
-         Handle controller started recording event
-         */
+        // Handle controller started recording event
         
-        /**
-         Delete sample function below
-         */
+        // Delete sample function below
         updateUIForRecordingStarted()
     }
     /**
@@ -203,57 +189,43 @@ extension CustomVoiceCaptureViewController: MiSnapVoiceCaptureControllerDelegate
         attemptCounter += 1
         
         if attemptCounter < samplesCount {
-            /**
-             Successfully recorded one of multiple vocie samples:
-             - Update your UI here to reflect this
-             - Make sure to call `controller.start()` to start a new recording once UI is setup
-             */
+            // Successfully recorded one of multiple vocie samples:
+            // - Update your UI here to reflect this
+            // - Make sure to call `controller.start()` to start a new recording once UI is setup
         } else {
-            /**
-             All samples were successfully collected:
-             - Return `results` to your application
-             - Update your UI here to reflect this (if needed)
-             - Make sure to call `shutdown` to prevent memory leaks
-             - Dismiss or notify a parent that it's ready to be dismissed
-             */
+            // All samples were successfully collected:
+            // - Return `results` to your application
+            // - Update your UI here to reflect this (if needed)
+            // - Make sure to call `shutdown` to prevent memory leaks
+            // - Dismiss or notify a parent that it's ready to be dismissed
         }
         
-        /**
-         Delete sample function below
-         */
+        // Delete sample function below
         updateUIForRecordingSucceeded(isFinal: attemptCounter >= samplesCount)
     }
     /**
      Called when a recording fails quality checks
      */
     public func miSnapVoiceCaptureControllerFailure(_ result: MiSnapVoiceCaptureResult) {
-        /**
-         Handle a quality issue detected in the recording (e.g. too short, too much noise):
-         - Update your UI here to reflect this
-         - Make sure to call `controller.start()` to start a new recording once UI is setup
-         */
+        // Handle a quality issue detected in the recording (e.g. too short, too much noise):
+        // - Update your UI here to reflect this
+        // - Make sure to call `controller.start()` to start a new recording once UI is setup
         
-        /**
-         Delete sample function below when implementing your UX and UI
-         */
+        // Delete sample function below when implementing your UX and UI
         updateUIForRecordingFailed(with: result)
     }
     /**
      Called when an SDK error occurs
      */
     public func miSnapVoiceCaptureControllerError(_ result: MiSnapVoiceCaptureResult) {
-        /**
-         Handle SDK error here
-         */
+        // Handle SDK error here
         dismiss()
     }
     /**
      Called when a session is cancelled by a user
      */
     public func miSnapVoiceCaptureControllerCancel(_ result: MiSnapVoiceCaptureResult) {
-        /**
-         Handle user cancelled event here
-         */
+        // Handle user cancelled event here
         dismiss()
     }
     /**
@@ -261,27 +233,21 @@ extension CustomVoiceCaptureViewController: MiSnapVoiceCaptureControllerDelegate
      */
     public func miSnapVoiceCaptureControllerInterruptionStarted(_ reason: MiSnapVoiceCaptureControllerInterruptionReason) {
         interruptionReason = reason
-        /**
-         Handle interruption started for a specific reason here
-         */
+        // Handle interruption started for a specific reason here
     }
     /**
      Called when a controller interruption has ended
      */
     public func miSnapVoiceCaptureControllerInterruptionEnded() {
         interruptionReason = .none
-        /**
-         Handle interruption ended here
-         */
+        // Handle interruption ended here
         controller.start()
     }
     /**
      Called every time a real-time voice data is processed with a speech length detected in the current recording
      */
     public func miSnapVoiceCaptureControllerSpeechLength(_ speechLength: Int) {
-        /**
-         (OPTIONAL) Handle speech length that's continuously updated
-         */
+        // (OPTIONAL) Handle speech length that's continuously updated
     }
 }
 

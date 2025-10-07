@@ -53,10 +53,8 @@ import MiSnapFacialCapture
         super.viewWillAppear(animated)
         start()
         
-        /**
-         Uncomment to simulate a timeout for debugging purposes.
-         Delete sample function below when implementing your UX and UI.
-         */
+        // Uncomment to simulate a timeout for debugging purposes.
+        // Delete sample function below when implementing your UX and UI.
         //simulateTimeoutAndRetry()
     }
     

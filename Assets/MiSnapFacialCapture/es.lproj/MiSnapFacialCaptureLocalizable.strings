@@ -53,12 +53,17 @@
 "misnap_facial_capture_ux_tutorial_instruction_no_hat"                  = "Evita que algo cubra tu rostro";
 
 // Timeout tutorial
-"misnap_facial_capture_ux_tutorial_timeout_message_1"                   = "Se acabó el tiempo, no tomamos su foto…";
+"misnap_facial_capture_ux_tutorial_timeout_message_1"                   = "Se acabó el tiempo, no pudimos tomar su foto…";
 "misnap_facial_capture_ux_tutorial_timeout_message_2"                   = "Quisiera intentar de nuevo?";
 
 // Review screen
 "misnap_facial_capture_ux_tutorial_review_voiceover"                    = "¿Está conforme con el resultado? ¿Quiere volver a tomarla?";
+"misnap_facial_capture_ux_tutorial_review_voiceover_2"                  = "La imagen de la selfie está en la pantalla. Solicita ayuda si deseas que se revise la imagen, o acéptala con el botón.";
 "misnap_facial_capture_ux_tutorial_review_message"                      = "¿Está conforme con el resultado?";
+
+// Common tutorial
+"misnap_facial_capture_ux_tutorial_tip"                                 = "Aquí hay un consejo";
+"misnap_facial_capture_ux_tutorial_tips"                                = "Aquí hay algunos consejos";
 
 // Success
 "misnap_facial_capture_ux_countdown_three"                              = "Tres";

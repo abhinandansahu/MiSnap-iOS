@@ -1,4 +1,38 @@
-# Migration guide for 5.8.0 and newer versions
+# Migration Guide
+
+Depending on the version you’re upgrading from, you might need to review several sections below.
+
+## Migration guide for 5.9.0 and newer versions
+
+1. Sharpness algorithm for `.idFront`, `.idBack`, `.passport`, and `.any` document types was updated to reduce a number of visually blurry images with a high sharpness score. As a result, a new sharpness threshold was set. If you've manually modified the default sharpness threshold, you must validate and adjust it to ensure optimal performance. For best results and ongoing compatibility, we strongly recommend reverting to the default threshold, which is optimized for the latest improvements.
+
+2. Several new localizable keys were added to respective SDKs
+
+| MiSnapLocalizable |
+| :--- |
+| misnap_tutorial_tip |
+| misnap_tutorial_tips |
+| misnap_tutorial_timeout_header |
+| misnap_tutorial_review_check |
+| misnap_tutorial_review_document |
+
+| MiSnapFacialCaptureLocalizable |
+| :--- |
+| misnap_facial_capture_ux_tutorial_review_voiceover_2 |
+| misnap_facial_capture_ux_tutorial_tip |
+| misnap_facial_capture_ux_tutorial_tips |
+
+| MiSnapNFCLocalizable |
+| :--- |
+| misnap_nfc_sdk_error_session_invalidated |
+
+3. To better guide users, one default value changed in MiSnapNFCLocalizable
+
+| Key | Old value | New value |
+| :--- | :--- | :--- |
+| misnap_nfc_sdk_error_system_resource_unavailable | Sorry, there was a system error.\nPlease reboot your device and re-start the flow | Sorry, there was a system error.\nPlease wait 20 seconds then retry.\nReboot your device if error persist. |
+
+## Migration guide for 5.8.0 and newer versions
 
 The primary focus of MiSnap 5.8.0 is to bring it into conformance to the European Accessibility Act (EAA). This required extensive UI adjustments. While making these changes, our goal was to keep the public API as intact as possible, introducing deprecations only when the existing API could not support EAA compliance.
 

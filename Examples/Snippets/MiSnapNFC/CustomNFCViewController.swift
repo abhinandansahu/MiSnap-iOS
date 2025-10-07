@@ -95,9 +95,7 @@ extension CustomNFCViewController {
     private func configureReader(with inputs: MiSnapNFCInputs, parameters: MiSnapNFCParameters) {
         reader = MiSnapNFCReader(with: inputs, parameters: parameters)
         let configuration = MiSnapNFCResourceLocatorConfiguration()
-        /**
-         Uncomment lines below if you need to override a default bundle (.main) or default strings file name (MiSnapNFCLocalizable)
-         */
+        // Uncomment lines below if you need to override a default bundle (.main) or default strings file name (MiSnapNFCLocalizable)
         //configuration.localization.bundle = // Your bundle where localization files are located
         //configuration.localization.stringsName = // Your localization file name
         MiSnapNFCResourceLocator.shared.set(configuration: configuration)

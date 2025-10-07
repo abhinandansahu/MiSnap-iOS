@@ -83,6 +83,13 @@
 
 "misnap_tutorial_auto"                  = "We will take the photo for you.";
 "misnap_tutorial_manual"                = "Tap the camera shutter button when ready.";
+"misnap_tutorial_tip"                   = "Here's a tip";
+"misnap_tutorial_tips"                  = "Here are a few tips";
+
+"misnap_tutorial_timeout_header"        = "Time's up, we couldn't take your photo…";
+
+"misnap_tutorial_review_check"          = "Image of the check is on the screen. Seek assistance if you would like the image reviewed, or accept with the button.";
+"misnap_tutorial_review_document"       = "Image of the document is on the screen. Seek assistance if you would like the image reviewed, or accept with the button.";
 
 // Failover Reasons
 "misnap_status_too_dark_timeout"                = "Place the document in a well-lit area";

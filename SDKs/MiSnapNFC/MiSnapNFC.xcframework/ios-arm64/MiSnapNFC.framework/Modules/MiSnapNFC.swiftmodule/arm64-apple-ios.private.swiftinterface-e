@@ -150,7 +150,7 @@ extension MiSnapNFCReader : CoreNFC.NFCTagReaderSessionDelegate {
 }
 @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @objc public class MiSnapNFCChipLocator : ObjectiveC.NSObject {
-  @objc public class func chipLocation(mrzString: Swift.String, documentNumber: Swift.String, dateOfBirth: Swift.String, dateOfExpiry: Swift.String) -> MiSnapNFCChipLocation
+  @objc public class func chipLocation(mrzString: Swift.String, documentNumber: Swift.String = "", dateOfBirth: Swift.String = "", dateOfExpiry: Swift.String = "") -> MiSnapNFCChipLocation
   @objc override dynamic public init()
   @objc deinit
 }
@@ -158,12 +158,19 @@ extension MiSnapNFCReader : CoreNFC.NFCTagReaderSessionDelegate {
   @objc public var documentNumber: Swift.String
   @objc public var dateOfBirth: Swift.String
   @objc public var dateOfExpiry: Swift.String
-  @objc public var mrzString: Swift.String
+  @objc public var mrzString: Swift.String {
+    @objc get
+    @objc set
+  }
   @objc public var documentType: MiSnapNFCDocumentType
   @objc public var chipLocation: MiSnapNFCChipLocation
+  @objc public var pin: Swift.String
+  @objc public var can: Swift.String
+  @objc public var puk: Swift.String
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  @objc public func resetPinRelated()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -223,6 +230,7 @@ public enum MiSnapNFCKey {
   @objc public var skipCA: Swift.Bool
   @objc public var optionalDataRedactionEnabled: Swift.Bool
   @objc public var restartPollingTime: Swift.Double
+  @objc public var connectionLossTime: Swift.Double
   @objc public var logging: MiSnapCore.MiSnapLogConfiguration
   @available(*, deprecated, message: "Call `logging.level` instead")
   @objc public var logLevel: MiSnapCore.MiSnapLogLevel

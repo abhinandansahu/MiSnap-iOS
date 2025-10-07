@@ -63,10 +63,8 @@ import MiSnapCore
         orientation = preferredInterfaceOrientationForPresentation
         start()
         
-        /**
-         Uncomment to simulate a timeout for debugging purposes.
-         Delete sample function below when implementing your UX and UI.
-         */
+        // Uncomment to simulate a timeout for debugging purposes.
+        // Delete sample function below when implementing your UX and UI.
         //simulateTimeoutAndRetry()
     }
     
@@ -327,9 +325,7 @@ extension CustomViewController: MiSnapAnalyzerDelegate {
     }
     
     public func miSnapAnalyzerException(_ exception: NSException) {
-        /**
-         Handle an exception thrown by OS that was caught by the SDK
-         */
+        // Handle an exception thrown by OS that was caught by the SDK
     }
 }
 

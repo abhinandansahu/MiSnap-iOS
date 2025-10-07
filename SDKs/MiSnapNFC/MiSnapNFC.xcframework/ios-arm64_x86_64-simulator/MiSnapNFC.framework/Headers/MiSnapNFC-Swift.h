@@ -359,8 +359,17 @@ SWIFT_CLASS("_TtC9MiSnapNFC15MiSnapNFCInputs")
 @property (nonatomic) enum MiSnapNFCDocumentType documentType;
 /// Chip location
 @property (nonatomic) enum MiSnapNFCChipLocation chipLocation;
+/// PIN required to access data for certain eDocs
+@property (nonatomic, copy) NSString * _Nonnull pin;
+/// CAN required to resume suspended PIN
+@property (nonatomic, copy) NSString * _Nonnull can;
+/// PUK required to unblock blocked PIN
+@property (nonatomic, copy) NSString * _Nonnull puk;
 /// Description of <code>MiSnapNFCInputs</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Resets PIN-related properties (PIN, CAN, PUK)
+/// Should be called every time a manual entry screen is presented to clear old values
+- (void)resetPinRelated;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -401,6 +410,8 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 @property (nonatomic) BOOL optionalDataRedactionEnabled;
 /// A time interval at which a polling should be restarted
 @property (nonatomic) NSTimeInterval restartPollingTime;
+/// A time interval at which a connection loss is considered not intermittent
+@property (nonatomic) NSTimeInterval connectionLossTime;
 /// Logging configuration
 @property (nonatomic, strong) MiSnapLogConfiguration * _Nonnull logging;
 /// Log level
@@ -412,7 +423,7 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// Default: <code>false</code>
 @property (nonatomic) BOOL skipPortrait;
 /// Progress indicator
-/// Default: <code>percentBeforeMessage</code> (starting with 5.8.1)
+/// Default: <code>percentBeforeMessage</code> (starting with 5.9.0)
 @property (nonatomic) enum MiSnapNFCProgressIndicator progressIndicator;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -822,8 +833,17 @@ SWIFT_CLASS("_TtC9MiSnapNFC15MiSnapNFCInputs")
 @property (nonatomic) enum MiSnapNFCDocumentType documentType;
 /// Chip location
 @property (nonatomic) enum MiSnapNFCChipLocation chipLocation;
+/// PIN required to access data for certain eDocs
+@property (nonatomic, copy) NSString * _Nonnull pin;
+/// CAN required to resume suspended PIN
+@property (nonatomic, copy) NSString * _Nonnull can;
+/// PUK required to unblock blocked PIN
+@property (nonatomic, copy) NSString * _Nonnull puk;
 /// Description of <code>MiSnapNFCInputs</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Resets PIN-related properties (PIN, CAN, PUK)
+/// Should be called every time a manual entry screen is presented to clear old values
+- (void)resetPinRelated;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -864,6 +884,8 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 @property (nonatomic) BOOL optionalDataRedactionEnabled;
 /// A time interval at which a polling should be restarted
 @property (nonatomic) NSTimeInterval restartPollingTime;
+/// A time interval at which a connection loss is considered not intermittent
+@property (nonatomic) NSTimeInterval connectionLossTime;
 /// Logging configuration
 @property (nonatomic, strong) MiSnapLogConfiguration * _Nonnull logging;
 /// Log level
@@ -875,7 +897,7 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// Default: <code>false</code>
 @property (nonatomic) BOOL skipPortrait;
 /// Progress indicator
-/// Default: <code>percentBeforeMessage</code> (starting with 5.8.1)
+/// Default: <code>percentBeforeMessage</code> (starting with 5.9.0)
 @property (nonatomic) enum MiSnapNFCProgressIndicator progressIndicator;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;

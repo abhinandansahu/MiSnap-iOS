@@ -87,22 +87,10 @@ class MiSnapWorkflowViewControllerFactory {
      Builds MiSnapNFC view controller
      */
     @available(iOS 13, *)
-    // swiftlint:disable:next function_parameter_count
-    func buildMiSnapNFCVC(mrzString: String,
-                          documentNumber: String,
-                          dateOfBirth: String,
-                          dateOfExpiry: String,
-                          documentType: MiSnapNFCDocumentType,
-                          chipLocation: MiSnapNFCChipLocation,
-                          delegate: MiSnapNFCViewControllerDelegate) -> MiSnapNFCViewController {
+    func buildMiSnapNFCVC(mrzString: String, delegate: MiSnapNFCViewControllerDelegate) -> MiSnapNFCViewController {
         let configuration = MiSnapNFCConfiguration()
             .withInputs { inputs in
-                inputs.documentNumber = documentNumber
-                inputs.dateOfBirth = dateOfBirth
-                inputs.dateOfExpiry = dateOfExpiry
                 inputs.mrzString = mrzString
-                inputs.documentType = documentType
-                inputs.chipLocation = chipLocation
             }
             .withCustomUxParameters { uxParameters in
                 uxParameters.autoDismiss = false
