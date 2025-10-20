@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapFacialCaptureUX-Swift.h</key>
 		<data>
-		/ar/csm8UCw4HNuKA2oSopLYgK4=
+		ORQRsKsju3ONusYT8vixWGcGdm4=
 		</data>
 		<key>Headers/MiSnapFacialCaptureUX.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Y0839svFx5nlkYFx9fJvZXutd+4=
+		bj9VO4endyGKJ4JiyGCl7gOnC+w=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		MgENExJsRgAlBMtI0t8mWTb8WqU=
+		+LJvZoM57mygs1vhxG0Rdt4MePs=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		MgENExJsRgAlBMtI0t8mWTb8WqU=
+		+LJvZoM57mygs1vhxG0Rdt4MePs=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1333okbxLh2Qzdd++pxLS0c8PTA=
+		g3aaAir3UQHYk5ywtCbW54SGHRc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RlAfW44OHjpjIAYtXitdMgM/JrtyM4f36TcxvWffIQg=
+			arCnX24g3YBktM6dP+ajRU3CRAKpYEhSrpXpKI27Sh4=
 			</data>
 		</dict>
 		<key>Headers/MiSnapFacialCaptureUX.h</key>
@@ -72,7 +72,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cA5865bWyAfPUuhD0gsFGekZJHmkivUO5EWS17UZdgI=
+			6Ht8Fa90KUaJozStahHGofS7eSHqxWEpOggM0b1hqrk=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cA5865bWyAfPUuhD0gsFGekZJHmkivUO5EWS17UZdgI=
+			6Ht8Fa90KUaJozStahHGofS7eSHqxWEpOggM0b1hqrk=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wmmtUXDnYstByob4gsYtsQ94mMSc+2lfTw8H63WKXTY=
+			Wbn3Fpw4hpF1vjxcfoL8dV5fXl6RVJoTqbh25G1Yr2E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
