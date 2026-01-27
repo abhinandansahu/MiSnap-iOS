@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Mitek-Systems/MiSnap-iOS.git",
       "state" : {
-        "branch" : "release/5.9.1",
-        "revision" : "ef89be85465f0b2c2a819d9a8c06f207d18d40a9"
+        "branch" : "release/5.10.0",
+        "revision" : "9ff079d9dc42f34f04ce0531bdfba7ba944a0669"
       }
     }
   ],
