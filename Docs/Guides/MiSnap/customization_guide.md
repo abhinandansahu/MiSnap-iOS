@@ -2,7 +2,7 @@
 
 :warning: This guide is only applicable if you've integrated `MiSnapUX`. Use this [starter custom view controller](../../../Examples/Snippets/MiSnap/CustomViewController.swift) when building your own UX/UI.
 
-Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/MiSnap/MiSnapCustomizationSampleApp) as a working customization example.
+Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/UIKit/MiSnap/MiSnapCustomizationSampleApp) as a working customization example.
 
 ## Table of Contents
 * [Overview](#overview)
@@ -191,17 +191,15 @@ let template = MiSnapConfiguration()
 ### 1. Implement custom Introductory instruction, Help, Timeout, and Review screens
 Use [CustomTutorialViewController as a starter](../../../Examples/Snippets/MiSnap/CustomTutorialViewController.swift).
 
-### 2. Disable default tutorial screens
+## Tutorial Callbacks
 
-```Swift
-let template = MiSnapConfiguration()
-    .withCustomUxParameters { uxParameters in
-        uxParameters.useCustomTutorials = true
-    }
-```
-### 3. Present custom tutorial screens
+Starting with 5.10.0, integrators receive the optional `miSnapCustomTutorial(_:tutorialMode:mode:statuses:image:)` callback every time one of four tutorial screens (instruction, timeout, help, review) is about to be presented. This provides flexibility for different use cases:
 
-After disabling default tutorial screens subscribe to `MiSnapViewControllerDelegate`'s optional callback `miSnapCustomTutorial(_:,:,:,:,:)` and present your custom screens.
+### Use Case 1: Use default tutorials (no callback needed)
+Integrators that wish to use default MiSnap tutorial screens and are not interested in getting insights on transitions should not implement this callback.
+
+### Use Case 2: Analytics only (keep default tutorials)
+Integrators that would like to get insights on transitions but still use default tutorial screens should implement this callback and optionally send analytics events:
 
 ```Swift
 func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
@@ -209,8 +207,67 @@ func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
                           mode: MiSnapMode,
                           statuses: [NSNumber]?,
                           image: UIImage?) {
+    switch tutorialMode {
+    case .help:
+        // Fire an analytics event that a user pressed the Help button
+        // Default Help screen will be presented
+    case .timeout:
+        // Fire an analytics event that session timed out
+        // Default Timeout screen will be presented
+    default:
+        break
+    }
+}
+```
+
+### Use Case 3: Selective custom tutorials (new in 5.10.0)
+Integrators that would like to present custom tutorial screen(s) for specific modes while keeping default behavior for others should call `skipDefaultTutorial()` before presenting their custom tutorial:
+
+```Swift
+func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+                          tutorialMode: MiSnapUxTutorialMode,
+                          mode: MiSnapMode,
+                          statuses: [NSNumber]?,
+                          image: UIImage?) {
+    switch tutorialMode {
+    case .help:
+        // Fire an analytics event that a user pressed the Help button
+        // Default Help screen will be presented
+    case .timeout:
+        guard let misnapVC = misnapVC else { return }
+        // Call skipDefaultTutorial() to let MiSnap know that default tutorial should not be presented
+        misnapVC.skipDefaultTutorial()
+        // Configure and present a custom tutorial for Timeout only
+        let tutorialVC = CustomTutorialViewController(for: documentType,
+                                                      tutorialMode: tutorialMode,
+                                                      mode: mode,
+                                                      statuses: statuses,
+                                                      image: image,
+                                                      delegate: misnapVC)
+        misnapVC.present(tutorialVC, animated: true)
+    default:
+        // Default Instruction and Review screens will be presented
+        break
+    }
+}
+```
+
+### Use Case 4: All custom tutorials (existing behavior)
+Integrators that implemented this callback before 5.10.0 using `useCustomTutorials = true` are not impacted. When `useCustomTutorials` is overridden to `true` in `MiSnapUxParameters`, `skipDefaultTutorial()` is automatically called internally:
+
+```Swift
+let configuration = MiSnapConfiguration(for: .idFront)
+    .withCustomUxParameters { uxParameters in
+        uxParameters.useCustomTutorials = true
+    }
+...
+func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+                          tutorialMode: MiSnapUxTutorialMode,
+                          mode: MiSnapMode,
+                          statuses: [NSNumber]?,
+                          image: UIImage?) {
     guard let misnapVC = misnapVC else { return }
-    
+    // Configure and present custom tutorial for all four screens
     let tutorialVC = CustomTutorialViewController(for: documentType,
                                                   tutorialMode: tutorialMode,
                                                   mode: mode,
@@ -221,7 +278,7 @@ func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
 }
 ```
 
-### 4. (Optional) Introductory instruction mode
+## (Optional) Introductory instruction mode
 
 By default, an introductory instruction screen is presented.
 
@@ -234,7 +291,7 @@ let template = MiSnapConfiguration()
     }
 ```
 
-### 5. (Optional) Review mode
+## (Optional) Review mode
 
 By default, a review screen is presented only after a session is completed in Manual mode and there's one or more quality issues with an image. 
 

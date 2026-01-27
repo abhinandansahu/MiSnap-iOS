@@ -414,21 +414,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MiSnapLicens
 
 
 typedef SWIFT_ENUM(NSInteger, MiSnapLicenseStatus, open) {
-/// License status is not set
+/// License is not set
   MiSnapLicenseStatusNone = 0,
 /// License is valid
   MiSnapLicenseStatusValid = 1,
-/// License is tampered with
+/// License failed validation
   MiSnapLicenseStatusNotValid = 2,
-/// License is valid but expired
+/// Expired license but all functionality is still accessible. Please contact Mitek as soon as possible to avoid loss of functionality.
   MiSnapLicenseStatusExpired = 3,
-/// License is valid but disabled
+/// Expired license and all functionality is no longer accessible. Please contact Mitek as soon as possible.
   MiSnapLicenseStatusDisabled = 4,
-/// License is valid but an application bundle identifier is not supported
+/// Current application id is not supported
   MiSnapLicenseStatusNotValidAppId = 5,
-/// License is valid but iOS platform is not licensed
+/// iOS platform is not supported
   MiSnapLicenseStatusPlatformNotSupported = 6,
-/// License is valid but a given feature is not supported
+/// Requested feature is not included with this license
   MiSnapLicenseStatusFeatureNotSupported = 7,
 };
 
@@ -440,9 +440,6 @@ SWIFT_CLASS("_TtC10MiSnapCore9MiSnapLog")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MiSnapLog * _Nonnull shared;)
 + (MiSnapLog * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)destroyShared;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) MiSnapLogConfiguration * _Nonnull configuration;)
-+ (MiSnapLogConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
-+ (void)setConfiguration:(MiSnapLogConfiguration * _Nonnull)value;
 - (void)verbose:(NSString * _Nonnull)msg;
 - (void)debug:(NSString * _Nonnull)msg;
 - (void)info:(NSString * _Nonnull)msg;

@@ -14,11 +14,11 @@
 		</data>
 		<key>ios-arm64/MiSnapVoiceCaptureUX.framework/Info.plist</key>
 		<data>
-		MRquPKWQwZHZAI65hCqragagvjE=
+		CzvonLV36l2Z3BUiB8UprFDLM5k=
 		</data>
 		<key>ios-arm64/MiSnapVoiceCaptureUX.framework/MiSnapVoiceCaptureUX</key>
 		<data>
-		C3+XQyEf+8T14ZgSCWok53dU9GE=
+		9GTScsjuYYEuPEgZcw7Z5swwDuc=
 		</data>
 		<key>ios-arm64/MiSnapVoiceCaptureUX.framework/Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/MiSnapVoiceCaptureUX.framework/_CodeSignature/CodeResources</key>
 		<data>
-		W7p8joTg4cvX47jueoMawK7QZH0=
+		Ldk7s+XnOIA+QbWikvAXUolzmoQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapVoiceCaptureUX.framework/Headers/MiSnapVoiceCaptureUX-Swift.h</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapVoiceCaptureUX.framework/Info.plist</key>
 		<data>
-		Jvk2kSgnycSv0fiCU/gpjZbof/E=
+		rR2VpMDwq/c14mdxEX+XlhharK8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapVoiceCaptureUX.framework/MiSnapVoiceCaptureUX</key>
 		<data>
-		VNID3oo7i626Wxwl+uIOzIcqJX8=
+		oHTjx/gGOUMMExB/esw72GpzyuY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapVoiceCaptureUX.framework/Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapVoiceCaptureUX.framework/_CodeSignature/CodeResources</key>
 		<data>
-		mgGkxGK4UEQlz/IdLq4XPCNL2Lk=
+		uK+rsopbt4sTqU138ynuQB/ADsY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -161,22 +161,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MRquPKWQwZHZAI65hCqragagvjE=
+			CzvonLV36l2Z3BUiB8UprFDLM5k=
 			</data>
 			<key>hash2</key>
 			<data>
-			BfKnr7Mw82rIXRtmmjlFcn4g6RWCR5jGF5TPXuZ3YTY=
+			pp41OzbPLzP6PHwD4nAsdhparMrGzbPMUUUO5CTghwc=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapVoiceCaptureUX.framework/MiSnapVoiceCaptureUX</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C3+XQyEf+8T14ZgSCWok53dU9GE=
+			9GTScsjuYYEuPEgZcw7Z5swwDuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			iktCENd9pFYL3i+FzzuiaW6zuPK2J9C7yvCLLGPz5Ew=
+			+/20rQ7yXbDyIWT9J8qqbsv7OkQvx6hhDtZY5rjGd34=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapVoiceCaptureUX.framework/Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -271,11 +271,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W7p8joTg4cvX47jueoMawK7QZH0=
+			Ldk7s+XnOIA+QbWikvAXUolzmoQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			B5FcCe1X/XMCEl7AMJ4gQHMTPHI3HZJImgJ0W4raaqo=
+			LLAhtnuBhK3xXvS2wBD9NfCkcbGnEl5LR38a71jAKPI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapVoiceCaptureUX.framework/Headers/MiSnapVoiceCaptureUX-Swift.h</key>
@@ -304,22 +304,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jvk2kSgnycSv0fiCU/gpjZbof/E=
+			rR2VpMDwq/c14mdxEX+XlhharK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TCqJ/SDDe+KMcl+fam/J6Xv6JthrlY6hhYAmKJI56Yc=
+			4jmbUA2cF4EXevJNjt8x4dSELUw77IHRix2OaWRyuYA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapVoiceCaptureUX.framework/MiSnapVoiceCaptureUX</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VNID3oo7i626Wxwl+uIOzIcqJX8=
+			oHTjx/gGOUMMExB/esw72GpzyuY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ncB9l6qSP4Rda2ZvP5FyOWB0Z7kZpGzUGgH4IsPuNnM=
+			FIfYVAotOtbfXIkXPjodSbVZ+K/jLAjoRj+5hjp5Wos=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapVoiceCaptureUX.framework/Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -480,11 +480,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mgGkxGK4UEQlz/IdLq4XPCNL2Lk=
+			uK+rsopbt4sTqU138ynuQB/ADsY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yca3hEIKIsl7+JOEIjms7gOBapYKP8/b4HArN2O9WP4=
+			iZbj9iXV3uSbwbF8xGeI02Xh3S0RaRODGnVCowFS3yA=
 			</data>
 		</dict>
 	</dict>

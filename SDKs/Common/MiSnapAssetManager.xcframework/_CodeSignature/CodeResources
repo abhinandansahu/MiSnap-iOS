@@ -14,11 +14,11 @@
 		</data>
 		<key>ios-arm64/MiSnapAssetManager.framework/Info.plist</key>
 		<data>
-		u6TG5lLrkNvj8bLjCllhQvZsTdU=
+		PBb5nyo9PH9siop2EFsdvRb8u2E=
 		</data>
 		<key>ios-arm64/MiSnapAssetManager.framework/MiSnapAssetManager</key>
 		<data>
-		ojI5lMGebHZpRJtAi211SUzZAu8=
+		WSVreevUwvWB+XZDfEZuRzcWgBs=
 		</data>
 		<key>ios-arm64/MiSnapAssetManager.framework/Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/MiSnapAssetManager.framework/_CodeSignature/CodeResources</key>
 		<data>
-		whlvWanjJIOkCRsNJtlS4qf+LLI=
+		8YsBMErtmaU+/0W7hhomZoIAyOE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapAssetManager.framework/Headers/MiSnapAssetManager-Swift.h</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapAssetManager.framework/Info.plist</key>
 		<data>
-		aGB/K6gRacOCECe7ykPgBw2eOpw=
+		l2CBd/6NUsZPaA+QaGGlYuVaFqM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapAssetManager.framework/MiSnapAssetManager</key>
 		<data>
-		RgQ3uZCqZdoiqn/5GExSBF7L8gM=
+		utd7Ygims5T+stM9ynOPDEds8xQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapAssetManager.framework/Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapAssetManager.framework/_CodeSignature/CodeResources</key>
 		<data>
-		21XLft9mhzm5gLE7yhOg+zjqPdA=
+		1jV05nYPu3lJfr2pse5otwpq+8c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -161,22 +161,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u6TG5lLrkNvj8bLjCllhQvZsTdU=
+			PBb5nyo9PH9siop2EFsdvRb8u2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			LsFK98zjYoBG2Hzg425teyxoufQipLylv5Wgc9cFtTA=
+			R2AZF/rxH8pM8RENtYkJxDiJIn8qyusOiZ4DbABmPDE=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapAssetManager.framework/MiSnapAssetManager</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ojI5lMGebHZpRJtAi211SUzZAu8=
+			WSVreevUwvWB+XZDfEZuRzcWgBs=
 			</data>
 			<key>hash2</key>
 			<data>
-			R9Q3au8SsBhEASCSTMAK4Kq+7NxG6ZhpHQgWZ9oM0LE=
+			N662WK/IqKl6dWLdoxSkoFDJP2EhNyThBJBn2QFvMgc=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapAssetManager.framework/Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -271,11 +271,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			whlvWanjJIOkCRsNJtlS4qf+LLI=
+			8YsBMErtmaU+/0W7hhomZoIAyOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/v3iBXPCecALvc4kQwMglCywiBOfAWU1GoLt9UGCp7A=
+			0aTe7WfgKuVX2Y+KoDT1rfQgkT2414H7suavvZSt5FE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapAssetManager.framework/Headers/MiSnapAssetManager-Swift.h</key>
@@ -304,22 +304,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aGB/K6gRacOCECe7ykPgBw2eOpw=
+			l2CBd/6NUsZPaA+QaGGlYuVaFqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			AQXX87gPZMW/zp1C1/f5XL6HLDo+uuUUayanlsHuFYA=
+			i91xDnDBq3hyUXjreW009xbQPCy5Rq9GmGyuQetnzIU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapAssetManager.framework/MiSnapAssetManager</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RgQ3uZCqZdoiqn/5GExSBF7L8gM=
+			utd7Ygims5T+stM9ynOPDEds8xQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			GUOZVwbKO/horhcIXdR4T+BWxGhJTwfyWaHWsKYGVrk=
+			zcL8jlrv6Re4LzzfNgSutFGNIpKi68f6QhTdHebarDQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapAssetManager.framework/Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -480,11 +480,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			21XLft9mhzm5gLE7yhOg+zjqPdA=
+			1jV05nYPu3lJfr2pse5otwpq+8c=
 			</data>
 			<key>hash2</key>
 			<data>
-			bUSCPkXInzHDtHmOE3AeC+rO+tTWBKPdYgsrTBYEtjQ=
+			5xBXtMFsfm3GnBJT+7FFgxInsg0eoJd9nv5HhhqUgiM=
 			</data>
 		</dict>
 	</dict>

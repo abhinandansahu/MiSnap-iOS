@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapNFC-Swift.h</key>
 		<data>
-		UWxTl3C0lJ+y9avDEWtIkzLKzv8=
+		WYeNqITZ6e81f0YYOKk0jWSI6qY=
 		</data>
 		<key>Headers/MiSnapNFC.h</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Headers/crypto.h</key>
 		<data>
-		+e1StTam+kYoPdRFOa/s+nHhDdo=
+		uOOQsCWzrduGlMYoPVHwtdGmPNw=
 		</data>
 		<key>Headers/cryptoerr.h</key>
 		<data>
@@ -362,11 +362,11 @@
 		</data>
 		<key>Headers/opensslconf.h</key>
 		<data>
-		g2g4oGxb3Jk5h2O3tk7K876vcEE=
+		cLQQ+mflDh3fl5Kxxk7pGZFzFig=
 		</data>
 		<key>Headers/opensslv.h</key>
 		<data>
-		8YnDS0zpfVVJ9zHFs1OW3kkXL8g=
+		gWk2wO1ANbdv6lU8TBBojc3rZ7c=
 		</data>
 		<key>Headers/ossl_typ.h</key>
 		<data>
@@ -414,7 +414,7 @@
 		</data>
 		<key>Headers/proverr.h</key>
 		<data>
-		A1TTbqPikhZ0LDIVyt3fJl0T/e4=
+		8dlY2SB7KblsBhWQriK85A7HuXo=
 		</data>
 		<key>Headers/provider.h</key>
 		<data>
@@ -466,7 +466,7 @@
 		</data>
 		<key>Headers/self_test.h</key>
 		<data>
-		r4pexkWtJkE0jQ8kvF9e/H+hPTo=
+		ZGVlzD8EBPYrGjzhI6AtOB4MYRo=
 		</data>
 		<key>Headers/sha.h</key>
 		<data>
@@ -582,11 +582,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZIWdWQtgB0csSH7xcJLywwF62JA=
+		LITdfmAPlY8LXcUu88enQ7Nn+Xg=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		x7KEr+c6Fku4HfqS6HR51sBXRFQ=
+		DS4r9vWQYBVh/AdKrASPn8zdowc=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -594,7 +594,7 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		8lyiowZ4vyWreWe/1y68skkb9Ks=
+		tWrM0B1HPOOatZbheOzLuUVboZU=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
@@ -602,7 +602,7 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9jWNagBrD2vus/6pT4d/4R4w1+o=
+		rit5JUVZRaKc2gzTlFR0v7uoH1Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -614,7 +614,7 @@
 		</data>
 		<key>geos</key>
 		<data>
-		tqfJhSLejFyemoL1HWrum6DSPxs=
+		iAFD/OE3LKzOadwvHHGT0r425w0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -623,7 +623,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r6GvKsxV24r4S7LEgot5lkQtEcHpWsdqyMEvnbY0iH0=
+			wtUhyU6hqfIK+cZekndGgO1uPGlxfSl4snauelLy1L8=
 			</data>
 		</dict>
 		<key>Headers/MiSnapNFC.h</key>
@@ -882,7 +882,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNuEkpGzGT2oDH9Uw1ZDRBTo3uBhUWreuc1dDHTWRyk=
+			KRukIa/betp+zvdKh6BuRS9beFxP3mT40WZM59VWvHI=
 			</data>
 		</dict>
 		<key>Headers/cryptoerr.h</key>
@@ -1246,14 +1246,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NxcKfuhDeU40068rxYMQWn/LQn0n1MdSl/Nf2s0Y4g4=
+			i92MswE2ZLryHJvyj6aL4yK2OZlCSNgb4iBy129+Z7I=
 			</data>
 		</dict>
 		<key>Headers/opensslv.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DZPbhslTzUfENT/WHXgrBN7EIeiYLoSMhTDbZuPiOTU=
+			ztHapqeeaDWRpaXCHYT2abPzHFJeI8NfTxdn7ok4jGY=
 			</data>
 		</dict>
 		<key>Headers/ossl_typ.h</key>
@@ -1337,7 +1337,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rVRR364SZ34fcNq2tO3caHkp+cf4l4zIkswNmfH9lw8=
+			V5jsbjI2h670dLlgtAKVwA2UE9SwV/tvs47iU8ehuYw=
 			</data>
 		</dict>
 		<key>Headers/provider.h</key>
@@ -1428,7 +1428,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tat22bHXkLywDm+HC1nAPKNBkVGz5ko4R0Zuzd89DLw=
+			n5+iahrqnWBtYYIdeIlwePJ4w0Wni9Cc8qcS3ijeuNk=
 			</data>
 		</dict>
 		<key>Headers/sha.h</key>
@@ -1631,7 +1631,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jOlLIo3y/YmnNQ/iuMnKXAPaYuuUDCQcXJ+5BlRt1r0=
+			2MI24dCVJ53q30P6w0FIqjhDYlg1kU2cgLcUw+A/USI=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -1645,7 +1645,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aYtPBQLqHMUC1FvUj282mrBNqYsueDdCmrb/GI9uXls=
+			cJ+uZwl3ZIwEE4l5mLQpcPrX2NX2s6ZIEskR18o2ou8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftinterface</key>
@@ -1659,7 +1659,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VA7ueT/aElCM42Jf8sZK9yp/fm9ZcOMZ4q+s5lCwd3A=
+			ZfmocTyeMAmggK2BEhUHQvI2/iwU9uHMjcX7jY81tTY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1680,7 +1680,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zj5qmRhsqlno5P6z/cl6KYTz+b83oZ4cVuFTdSdjBls=
+			lNjciCuF36vJeB+GXlz9ciNF7iP2x1u7J+G8o9OCfYM=
 			</data>
 		</dict>
 	</dict>

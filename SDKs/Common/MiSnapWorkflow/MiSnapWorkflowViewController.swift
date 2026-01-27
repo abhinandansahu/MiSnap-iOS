@@ -43,6 +43,11 @@ protocol MiSnapWorkflowViewControllerDelegate: NSObject {
      */
     func miSnapWorkflowError(_ result: MiSnapWorkflowResult)
     
+    /**
+     Delegates receive this callback when the workflow needs to change supported orientations (optional)
+     */
+    func miSnapWorkflowOrientationDidChange(_ orientations: UIInterfaceOrientationMask, for step: MiSnapWorkflowStep)
+    
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     /**
      Delegates receive this callback when an NFC step is skipped by a user (optional)
@@ -60,6 +65,7 @@ protocol MiSnapWorkflowViewControllerDelegate: NSObject {
 
 extension MiSnapWorkflowViewControllerDelegate {
     func miSnapWorkflowIntermediate(_ result: Any, step: MiSnapWorkflowStep) {}
+    func miSnapWorkflowOrientationDidChange(_ orientations: UIInterfaceOrientationMask, for step: MiSnapWorkflowStep) {}
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     func miSnapWorkflowNfcSkipped(_ result: [String : Any]) {}
     #endif
@@ -246,6 +252,9 @@ extension MiSnapWorkflowViewController: MiSnapWorkflowControllerDelegate {
     
     func miSnapWorkflowControllerPresent(_ vc: UIViewController!, supportedOrientation: UIInterfaceOrientationMask, step: MiSnapWorkflowStep) {
         self.supportedOrientation = supportedOrientation
+        
+        // Notify delegate about orientation change
+        delegate?.miSnapWorkflowOrientationDidChange(supportedOrientation, for: step)
         
         var delay: Int = 0
         if willRotate(for: supportedOrientation) {

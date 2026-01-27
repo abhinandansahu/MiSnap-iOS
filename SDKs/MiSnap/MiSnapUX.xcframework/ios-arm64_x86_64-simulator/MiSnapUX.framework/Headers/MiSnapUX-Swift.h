@@ -445,6 +445,10 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapHintParameters")
 /// Min: 0.0
 /// Default: 1.5
 @property (nonatomic) NSTimeInterval initialDelayTime;
+/// Indicates whether a hint should be announced when VoiceOver is enabled regardless whether it’s unique or repetitive
+/// Default: <code>true</code>
+/// When overridden to <code>false</code>, a repetitive hint is announced only the first time
+@property (nonatomic) BOOL announceAll;
 /// Hint parameters dictionary representation
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
 /// Description
@@ -717,6 +721,11 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// Indicates whether navigation bar should be hidden when a view controller is embedded into navigation controller
 /// Default: <code>false</code>
 @property (nonatomic) BOOL navigationBarHidden;
+/// Enables accessibility tutorials.
+/// Currently, it’s a multi screen tutorials for visually impaired users
+/// note:
+/// it’s only applied when VoiceOver is enabled; a regular one-page tutorial is always presented when VoiceOver is disabled
+@property (nonatomic) BOOL enableAccessibilityTutorials;
 /// UX parameters dictionary representation
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull dictionary;
 /// Description of <code>MiSnapUxParameters</code>
@@ -911,10 +920,68 @@ SWIFT_PROTOCOL("_TtP8MiSnapUX28MiSnapViewControllerDelegate_")
 /// note:
 /// This callback will be deprecated in the future. Use <code>miSnapCustomTutorial(_ :,mode:,tutorialMode:,statuses:,image:)</code> instead
 - (void)miSnapTimeoutAction:(NSArray<NSString *> * _Nonnull)messages;
-/// Delegates receive this callback when <code>useCustomTutorials</code> is overridden to <code>true</code> in <code>MiSnapUxParameters</code>
-/// In this case an integrator is responsible for implementing custom tutorials for Introductory instruction, Help, Timeout and Review screens
-/// note:
-/// It’s optional
+/// Starting with 5.10.0 delegates receive this optional callback everytime one of four tutorial screens (instruction, timeout, help, review) is about to be presented.
+/// Integrators that wish to use default MiSnap tutorial screens and are not interested in getting insights on what transition has happened (e.g. a help or timeout screen is presented)
+/// should not implement this callback, i.e. do not include this function in code.
+/// Integrators that would like to only get insights on what transition has happened but still use default tutorial screens, should implement this callback, optionally check for
+/// desired <code>MiSnapUxTutorialMode</code>, and send an appropriate analytics event.
+/// Integrators that would like to present their own custom tutorial screen(s), should let <code>MiSnapViewController</code> know that a default tutorial should be skipped by calling a new
+/// public API called <code>skipDefaultTutorial()</code>. Note, integrators that implemented this callback before 5.10.0 are not impacted. To not break existing implementations of
+/// this callback, when <code>useCustomTutorials</code> is overridden to <code>true</code> in <code>MiSnapUxParameters</code>, <code>skipDefaultTutorial()</code> is automatically called internally. It means
+/// just like before an integrator is responsible for configuring and presenting a custom tutorial for all four screens and call to the new public API is not needed.
+/// An example for integrators that implemented this callback before 5.10.0:
+/// // A custom UX configuration is passed to MiSnapViewController to indicate that all four tutorial screens will be configured and presented by an integrator
+/// let configuration = MiSnapConfiguration(for: .idFront)
+/// .withCustomUxParameters { uxParameters in
+/// uxParameters.useCustomTutorials = true
+/// }
+/// …
+/// // An optional callback is implemented the following way:
+/// func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+/// tutorialMode: MiSnapUxTutorialMode,
+/// mode: MiSnapMode,
+/// statuses: [NSNumber]?,
+/// image: UIImage?) {
+/// guard let misnapVC = misnapVC else { return }
+/// // Configure and present custom tutorial for all for screens
+/// let tutorialVC = CustomTutorialViewController(for: documentType,
+/// tutorialMode: tutorialMode,
+/// mode: mode,
+/// statuses: statuses,
+/// image: image,
+/// delegate: misnapVC)
+/// misnapVC.present(tutorialVC, animated: true)
+/// }
+/// An example for integrators using this callback in 5.10.0 or newer version:
+/// // DO NOT override <code>useCustomTutorials</code> to <code>true</code>, unless you explicitly want to configure and present all four custom tutorials.
+/// // An optional callback is implemented the following way:
+/// func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+/// tutorialMode: MiSnapUxTutorialMode,
+/// mode: MiSnapMode,
+/// statuses: [NSNumber]?,
+/// image: UIImage?) {
+/// switch tutorialMode {
+/// case .help:
+/// // Fire an analytics event that a user pressed the Help button
+/// // Default Help screen will be presented
+/// case .timeout:
+/// guard let misnapVC = misnapVC else { return }
+/// // It is required to call <code>skipDefaultTutorial()</code> before configuring your custom tutorial to let
+/// // MiSnap know that a default tutorial should not be presented
+/// misnapVC.skipDefaultTutorial()
+/// // Configure and present a custom tutorial for Timeout only
+/// let tutorialVC = CustomTutorialViewController(for: documentType,
+/// tutorialMode: tutorialMode,
+/// mode: mode,
+/// statuses: statuses,
+/// image: image,
+/// delegate: misnapVC)
+/// misnapVC.present(tutorialVC, animated: true)
+/// default:
+/// // Default Instruction and Review screens will be presented
+/// break
+/// }
+/// }
 - (void)miSnapCustomTutorial:(MiSnapScienceDocumentType)documentType tutorialMode:(enum MiSnapUxTutorialMode)tutorialMode mode:(MiSnapMode)mode statuses:(NSArray<NSNumber *> * _Nullable)statuses image:(UIImage * _Nullable)image;
 /// Delegates receive this callback when a camera finishes recording a video when <code>recordVideo</code> is overridden to <code>true</code> in <code>MiSnapCameraParameters</code>
 /// note:
@@ -1381,6 +1448,10 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapHintParameters")
 /// Min: 0.0
 /// Default: 1.5
 @property (nonatomic) NSTimeInterval initialDelayTime;
+/// Indicates whether a hint should be announced when VoiceOver is enabled regardless whether it’s unique or repetitive
+/// Default: <code>true</code>
+/// When overridden to <code>false</code>, a repetitive hint is announced only the first time
+@property (nonatomic) BOOL announceAll;
 /// Hint parameters dictionary representation
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
 /// Description
@@ -1653,6 +1724,11 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// Indicates whether navigation bar should be hidden when a view controller is embedded into navigation controller
 /// Default: <code>false</code>
 @property (nonatomic) BOOL navigationBarHidden;
+/// Enables accessibility tutorials.
+/// Currently, it’s a multi screen tutorials for visually impaired users
+/// note:
+/// it’s only applied when VoiceOver is enabled; a regular one-page tutorial is always presented when VoiceOver is disabled
+@property (nonatomic) BOOL enableAccessibilityTutorials;
 /// UX parameters dictionary representation
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull dictionary;
 /// Description of <code>MiSnapUxParameters</code>
@@ -1847,10 +1923,68 @@ SWIFT_PROTOCOL("_TtP8MiSnapUX28MiSnapViewControllerDelegate_")
 /// note:
 /// This callback will be deprecated in the future. Use <code>miSnapCustomTutorial(_ :,mode:,tutorialMode:,statuses:,image:)</code> instead
 - (void)miSnapTimeoutAction:(NSArray<NSString *> * _Nonnull)messages;
-/// Delegates receive this callback when <code>useCustomTutorials</code> is overridden to <code>true</code> in <code>MiSnapUxParameters</code>
-/// In this case an integrator is responsible for implementing custom tutorials for Introductory instruction, Help, Timeout and Review screens
-/// note:
-/// It’s optional
+/// Starting with 5.10.0 delegates receive this optional callback everytime one of four tutorial screens (instruction, timeout, help, review) is about to be presented.
+/// Integrators that wish to use default MiSnap tutorial screens and are not interested in getting insights on what transition has happened (e.g. a help or timeout screen is presented)
+/// should not implement this callback, i.e. do not include this function in code.
+/// Integrators that would like to only get insights on what transition has happened but still use default tutorial screens, should implement this callback, optionally check for
+/// desired <code>MiSnapUxTutorialMode</code>, and send an appropriate analytics event.
+/// Integrators that would like to present their own custom tutorial screen(s), should let <code>MiSnapViewController</code> know that a default tutorial should be skipped by calling a new
+/// public API called <code>skipDefaultTutorial()</code>. Note, integrators that implemented this callback before 5.10.0 are not impacted. To not break existing implementations of
+/// this callback, when <code>useCustomTutorials</code> is overridden to <code>true</code> in <code>MiSnapUxParameters</code>, <code>skipDefaultTutorial()</code> is automatically called internally. It means
+/// just like before an integrator is responsible for configuring and presenting a custom tutorial for all four screens and call to the new public API is not needed.
+/// An example for integrators that implemented this callback before 5.10.0:
+/// // A custom UX configuration is passed to MiSnapViewController to indicate that all four tutorial screens will be configured and presented by an integrator
+/// let configuration = MiSnapConfiguration(for: .idFront)
+/// .withCustomUxParameters { uxParameters in
+/// uxParameters.useCustomTutorials = true
+/// }
+/// …
+/// // An optional callback is implemented the following way:
+/// func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+/// tutorialMode: MiSnapUxTutorialMode,
+/// mode: MiSnapMode,
+/// statuses: [NSNumber]?,
+/// image: UIImage?) {
+/// guard let misnapVC = misnapVC else { return }
+/// // Configure and present custom tutorial for all for screens
+/// let tutorialVC = CustomTutorialViewController(for: documentType,
+/// tutorialMode: tutorialMode,
+/// mode: mode,
+/// statuses: statuses,
+/// image: image,
+/// delegate: misnapVC)
+/// misnapVC.present(tutorialVC, animated: true)
+/// }
+/// An example for integrators using this callback in 5.10.0 or newer version:
+/// // DO NOT override <code>useCustomTutorials</code> to <code>true</code>, unless you explicitly want to configure and present all four custom tutorials.
+/// // An optional callback is implemented the following way:
+/// func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+/// tutorialMode: MiSnapUxTutorialMode,
+/// mode: MiSnapMode,
+/// statuses: [NSNumber]?,
+/// image: UIImage?) {
+/// switch tutorialMode {
+/// case .help:
+/// // Fire an analytics event that a user pressed the Help button
+/// // Default Help screen will be presented
+/// case .timeout:
+/// guard let misnapVC = misnapVC else { return }
+/// // It is required to call <code>skipDefaultTutorial()</code> before configuring your custom tutorial to let
+/// // MiSnap know that a default tutorial should not be presented
+/// misnapVC.skipDefaultTutorial()
+/// // Configure and present a custom tutorial for Timeout only
+/// let tutorialVC = CustomTutorialViewController(for: documentType,
+/// tutorialMode: tutorialMode,
+/// mode: mode,
+/// statuses: statuses,
+/// image: image,
+/// delegate: misnapVC)
+/// misnapVC.present(tutorialVC, animated: true)
+/// default:
+/// // Default Instruction and Review screens will be presented
+/// break
+/// }
+/// }
 - (void)miSnapCustomTutorial:(MiSnapScienceDocumentType)documentType tutorialMode:(enum MiSnapUxTutorialMode)tutorialMode mode:(MiSnapMode)mode statuses:(NSArray<NSNumber *> * _Nullable)statuses image:(UIImage * _Nullable)image;
 /// Delegates receive this callback when a camera finishes recording a video when <code>recordVideo</code> is overridden to <code>true</code> in <code>MiSnapCameraParameters</code>
 /// note:

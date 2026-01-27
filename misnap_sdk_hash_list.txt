@@ -2,47 +2,47 @@ IDLiveFaceIAD.xcframework
 	ios-arm64_x86_64-simulator 32fac64aed6351f7a1b1277fecacb77c85690eb55eb2be69121c12842faa6e22
 	ios-arm64                  663126999181bbe35040e47dad7c4ac2e86f98be45df7c95c3389903d997f417
 MiSnapAssetManager.xcframework
-	ios-arm64_x86_64-simulator 1943995706ca3bf868ae17085dd4784fe056c468494f07f259a1d6b0a60656b9
-	ios-arm64                  47d4376aef12b018440120924cc00ae0aabeecdc46e998691d081667da0cd0b1
+	ios-arm64_x86_64-simulator cdc2fc8e5aefe917b82f3cdf3604aeb4518d2292a2ebc7fa4214dd1de6daac34
+	ios-arm64                  37aeb658afc8a8a97a7562dda314a4a050c93f61213724e1049067d9016f3207
 MiSnapCore.xcframework
-	ios-arm64_x86_64-simulator 523cd2db4d950bb638090177855695716385869b02a5c729fadb32269f4554eb
-	ios-arm64                  91594efaadd088d64062b7851a9bf0603570e19b21a02d3820324234ced1d999
+	ios-arm64_x86_64-simulator 3cca5f0fb5e2d5f07135b0f3b0c6ffce361b886fd27c5d0187c29492af67aa01
+	ios-arm64                  9aad60349e0af1472683669d8a3236c430983dc29ffef83fef6a153e15539b64
 MiSnap.xcframework
-	ios-arm64_x86_64-simulator 21d648eec4e4213aec44b06f1b6520c95b719efeb313bb94dc2ee134cea5043a
-	ios-arm64                  155c253ac857126b5988c25651b65e4869cc32fa964eca39a74e895b64401aea
+	ios-arm64_x86_64-simulator e3bc997bd9a7c9555b1e976eb6da07203d65e30788aba64073b8252d7ff4bca6
+	ios-arm64                  5827c388357a1d90f2851abe85c1e765625a1026b758be03df90fd01b954dc1e
 MiSnapBarcodeScanner.xcframework
-	ios-arm64_x86_64-simulator b136755df85b7cb69547ab0e41ea8bfb8260e046cc45aecb911c48f55d02e4f7
-	ios-arm64                  c83d56f2383422820d1475a95460a0458be51cdf5a323fe3c08c40d3d8939ef3
+	ios-arm64_x86_64-simulator cfde93f891141f163e922a7f5ac164b63b6edc92d1eeae3452d7245432c038cf
+	ios-arm64                  0f827f7c7281f662947f0003e03808314f9b1451ab9c5ff58bedd72644f7d44a
 MiSnapCamera.xcframework
-	ios-arm64_x86_64-simulator 4f9305fcc3fee7ccf14b11aa9575e65377ac9be839cc5bbc2de668f6cd4f74ad
-	ios-arm64                  b455ca6691d1f49c6681b9f1a32bfa2b047d8537b5e96dfb6576d51494641171
+	ios-arm64_x86_64-simulator e6a6c84795989afaaf81132c5b5b4fa341133dac91660f4d0dd5f3e4fb0db260
+	ios-arm64                  322e8f15fd14c575d86e3efa8fff98c36a89ecf3a4523673abdb053db5f71796
 MiSnapScience.xcframework
-	ios-arm64_x86_64-simulator f05908b425adfe6a08ad4d2b808f4ed8131d8002cec80d8a4e49b34ea935f979
-	ios-arm64                  5e27af0a21bb3f95b718714821ac8fdb58f6cd7c5a92bf8a1bf1149b3d146865
+	ios-arm64_x86_64-simulator eeb1f97ba31e6127f58ae8f50865faa648075aa1129f6cdf03e03ca0214aa1d9
+	ios-arm64                  d9717306f3aa7dcc14004d2a471e1870c8102ba14f25bf2d0de0eaf58539c8ce
 MiSnapUX.xcframework
-	ios-arm64_x86_64-simulator fb19123afa12c6f79b9d8c056f39c6d1861ac2b55b4009a124d142f42dd8b384
-	ios-arm64                  cd0c459c3b118fd20c68a971fdca86689d5eb48f2714ae33777db1c8afee7a38
+	ios-arm64_x86_64-simulator 5c4def5dedeb9abdfa2a7511aec94f6d5810c22bd212bfcfd1b368893c5402bb
+	ios-arm64                  24d10003cb3fba9d5196b980d2730691eb5dc63e8776cefdf51dc4b908866979
 MobileFlow.xcframework
 	ios-arm64_x86_64-simulator a3fb452f4a1d493b5fd5a1c14737fdf340b8a187f9de8451c72d5d43b992256e
 	ios-arm64                  f8350b2d58de03d4926f144ce8252f16f864357f49f88e8053bbb1d816be96f6
 MiSnapFacialCapture.xcframework
-	ios-arm64_x86_64-simulator 86b13f732a8a9b0f9284289527283bc87790183a8061fc69b72c28c1734265f1
-	ios-arm64                  099276cafe6cca1f196476587bcf26accc8e248349b22a64483db71ed6346fac
+	ios-arm64_x86_64-simulator 9d5f3b4f595881c6573dc2cd0bcd6c7371fb5754e24f286584c323dff904aaa5
+	ios-arm64                  f3707cb18298f98aa7a048508d98625c43fc37e9a38eef30374cc1af25cb021c
 MiSnapFacialCaptureUX.xcframework
-	ios-arm64_x86_64-simulator 9f5fad47fc11a60df7810a28135709c691c490c69e048b53114a1b2c6b8b3cdf
-	ios-arm64                  e870006e96d023a7a6283a824eebb79f36595a968a3719680a48ce0f9eebb59a
+	ios-arm64_x86_64-simulator 3508ce89b16286a58be34a6bdf89a3958dbc58966cbefdeaa6dab45a6d1fccbe
+	ios-arm64                  6ed4b38822a55994f2b83f7f5265381305514a9f4618b585738ad036f059e863
 MiSnapNFC.xcframework
-	ios-arm64_x86_64-simulator 08fc5219c460ba8ec61e0ace62e217e46772d2c606ac248a70af1d542eadacc6
-	ios-arm64                  4c3c20b0114d0ce05921fe6478c177861fb3a56211c6aea2f3b94ed5b35ae2c6
+	ios-arm64_x86_64-simulator 1ec1ce96e8dfd80abd290a6fcddea8a67a218434fc485c57daeac9d3b2f8e078
+	ios-arm64                  3755c92622bfd3a2a5e7690df2344b2a34db9c3ea6c5fa65673abe2e9d206640
 MiSnapNFCUX.xcframework
-	ios-arm64_x86_64-simulator 69b38608a18e6cb58d6e86e4643dd029ecd099efcffcc3f50eda81be07ba8f77
-	ios-arm64                  ce72e2897c78a4337f2ce8b16fbdd576d5dbc86e888b9d796fd267c0cafa9077
+	ios-arm64_x86_64-simulator 3cbd9c019ff6e51cf9f3f5fc08c7ca40511078e57e259dff1f2219941345f955
+	ios-arm64                  b210e332e8c5ea7acef87c9fe06997eee6fb5be86ec24fe2cc606079bb572c66
 MiSnapVoiceCapture.xcframework
-	ios-arm64_x86_64-simulator 8162f1880d631940c2ae03e813935ab9d80d1a39e09b76b6f89afd9317ee9a81
-	ios-arm64                  48e66b777e0d3b4593886d8dea8ce47afe3bdad0d7f94bdde2ce66c6af8ae08a
+	ios-arm64_x86_64-simulator 3faa2e77cd2e456129dd9ffde0ed4998206b4f57d4ae4b882190c3fc04ddd621
+	ios-arm64                  2caa4863920fb8f8edcb5ccdfea463e91ed2812352de6b42798bc3de66dc4c1c
 MiSnapVoiceCaptureUX.xcframework
-	ios-arm64_x86_64-simulator 9dc07d97aa923f845d6b666f3f917239607467b919a46cd41a01f822c3ee3673
-	ios-arm64                  8a4b4210d77da4560bde2f85cf3ba2696eb3b8f2b627d0bbcaf08b2c63f3e44c
+	ios-arm64_x86_64-simulator 1487d8540a2d3ad6df5c89173e3a1d49b559f8afe32c08e8463fb9863a795a8b
+	ios-arm64                  fbfdb4ad0ef25db0f22164fd27caaa6ecbfb3a442fc7a8610ed658e6b8c6777e
 VoiceSdk.xcframework
 	ios-arm64_x86_64-simulator ff44b8b8a420a0b9c156a45430cb5383dcaa3c8c0477f11274e140493c757efc
 	ios-arm64                  4dcf7c90f48292563e3e357f5ea3b400b50ffdf83da0c69eebc8c29ada584577

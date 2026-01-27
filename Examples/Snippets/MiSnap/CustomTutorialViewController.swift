@@ -128,10 +128,16 @@ extension CustomTutorialViewController {
     private func getGenericMessages() -> [String] {
         var firstKey = ""
         switch documentType {
-        case .checkFront, .checkBack:
-            firstKey = "misnap_tutorial_check"
-        case .anyId, .idFront, .idBack:
-            firstKey = "misnap_tutorial_id"
+        case .checkFront:
+            firstKey = "misnap_tutorial_check_front"
+        case .checkBack:
+            firstKey = "misnap_tutorial_check_back"
+        case .anyId:
+            firstKey = "misnap_tutorial_document"
+        case .idFront:
+            firstKey = "misnap_tutorial_id_front"
+        case .idBack:
+            firstKey = "misnap_tutorial_id_back"
         case .passport:
             firstKey = "misnap_tutorial_passport"
         default:
@@ -151,10 +157,7 @@ extension CustomTutorialViewController {
 // MARK: Custom UI
 extension CustomTutorialViewController {
     private func configureSubviews() {
-        // Implement your UI here
-        
         removeAllSubviews()
-        configureCommonSubviews()
         
         switch tutorialMode {
         case .instruction:  configureForInstruction()
@@ -166,22 +169,56 @@ extension CustomTutorialViewController {
     }
     
     private func removeAllSubviews() {
-        for v in view.subviews {
-            v.removeFromSuperview()
+        view.subviews.forEach { $0.removeFromSuperview() }
+    }
+    
+    private func configureCommonSubviews(messages: [String], buttons: [(String, Selector)]) {
+        guard !messages.isEmpty else { return }
+        
+        // Messages stack view
+        let messagesStackView = UIStackView()
+        messagesStackView.translatesAutoresizingMaskIntoConstraints = false
+        messagesStackView.axis = .vertical
+        messagesStackView.spacing = 10
+        messages.forEach { messagesStackView.addArrangedSubview(configureLabel(withText: $0)) }
+        
+        view.addSubview(messagesStackView)
+        NSLayoutConstraint.activate([
+            messagesStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            messagesStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        // Buttons
+        let buttonViews = buttons.map { configureButton(withTitle: $0.0, selector: $0.1, frame: CGRect(x: 0, y: 0, width: 90, height: 40)) }
+        buttonViews.forEach { view.addSubview($0) }
+        
+        let offset: CGFloat = 30.0
+        buttonViews.first?.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: offset).isActive = true
+        buttonViews.last?.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -offset).isActive = true
+        
+        if buttonViews.count == 3 {
+            buttonViews[1].centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+        }
+        
+        buttonViews.forEach {
+            $0.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -offset).isActive = true
         }
     }
     
-    private func configureCommonSubviews() {
-        // Implemenent common UI for all tutorials here or delete this function if there's no common UI
-    }
-    
     private func configureForInstruction() {
-        /* 
+        let messages = getGenericMessages()
+        let cancelButton = ("Cancel", #selector(cancelButtonAction(_:)))
+        let continueButton = ("Continue", #selector(continueButtonAction(_:)))
+        let buttons = [cancelButton, continueButton]
+        
+        configureCommonSubviews(messages: messages, buttons: buttons)
+        
+        /*
          Implement your instruction tutorial here
          
          Note:
-            * `documentType` is available so that messages can be tailored for each document type if needed
-            * `mode` is available so that messages can be tailored for each mode if needed
+         * `documentType` is available so that messages can be tailored for each document type if needed
+         * `mode` is available so that messages can be tailored for each mode if needed
          
          IMPORTANT:
          
@@ -189,13 +226,6 @@ extension CustomTutorialViewController {
          and pass cancelButtonAction(_:), retryButtonAction(_:), continueButtonAction(_:) selectors respectively
          that'll properly notify MiSnapViewController
          */
-        
-        /*
-         Uncomment to get default MiSnap messages.
-         Note, messages themselves can be customized in `MiSnapLocalizable.strings`.
-         Alternatively, use your own messages if needed.
-         */
-        //let messages = getGenericMessages()
     }
     
     private func configureForHelp() {
@@ -203,22 +233,21 @@ extension CustomTutorialViewController {
          Implement your help tutorial here
          
          Note:
-            * `documentType` is available so that messages can be tailored for each document type if needed
-            * `mode` is available so that messages can be tailored for each mode if needed
+         * `documentType` is available so that messages can be tailored for each document type if needed
+         * `mode` is available so that messages can be tailored for each mode if needed
          
          IMPORTANT:
          
-         When implementing Cancel, Retry, Continue/Manual buttons make sure to call `addTarget(_:action:for:)`
-         and pass cancelButtonAction(_:), retryButtonAction(_:), continueButtonAction(_:) selectors respectively
+         When implementing Cancel, Retry, Continue/Manual buttons make sure to pass cancelButtonAction(_:), retryButtonAction(_:), continueButtonAction(_:) selectors respectively
          that'll properly notify MiSnapViewController
          */
         
-        /*
-         Uncomment to get default MiSnap messages.
-         Note, messages themselves can be customized in `MiSnapLocalizable.strings`.
-         Alternatively, use your own messages if needed.
-         */
-        //let messages = getGenericMessages()
+        let messages = getGenericMessages()
+        let cancelButton = ("Cancel", #selector(cancelButtonAction(_:)))
+        let continueButton = ("Continue", #selector(continueButtonAction(_:)))
+        let buttons = [cancelButton, continueButton]
+        
+        configureCommonSubviews(messages: messages, buttons: buttons)
     }
     
     private func configureForTimeout() {
@@ -226,19 +255,23 @@ extension CustomTutorialViewController {
          Implement your timeout tutorial here
          
          Note:
-            * `statuses` of type `[MiSnapStatus]` is available with ordered statuses from the most to the least frequent
-            * `documentType` is available so that messages can be tailored for each document type if needed
+         * `statuses` of type `[MiSnapStatus]` is available with ordered statuses from the most to the least frequent
+         * `documentType` is available so that messages can be tailored for each document type if needed
          
          IMPORTANT:
          
-         When implementing Cancel, Retry, Continue/Manual buttons make sure to call `addTarget(_:action:for:)`
-         and pass cancelButtonAction(_:), retryButtonAction(_:), continueButtonAction(_:) selectors respectively
+         When implementing Cancel, Retry, Continue/Manual buttons make sure to pass cancelButtonAction(_:), retryButtonAction(_:), continueButtonAction(_:) selectors respectively
          that'll properly notify MiSnapViewController
          */
         
-        /* Uncomment to get MiSnap localized messages for given `statuses`.
-         Alternatively, create your own map from `[MiSnapStatus]` to a `[String]` */
-        //let messages = getLocalizedMessages(from: statuses)
+        // Alternatively, create your own map from `[MiSnapStatus]` to a `[String]`
+        let messages = getLocalizedMessages(from: statuses)
+        let cancelButton = ("Cancel", #selector(cancelButtonAction(_:)))
+        let retryButton = ("Retry", #selector(retryButtonAction(_:)))
+        let manualButton = ("Manual", #selector(continueButtonAction(_:)))
+        let buttons = [cancelButton, retryButton, manualButton]
+        
+        configureCommonSubviews(messages: messages, buttons: buttons)
     }
     
     private func configureForReview() {
@@ -246,10 +279,10 @@ extension CustomTutorialViewController {
          Implement your review tutorial here
          
          Note:
-            * `statuses` of type `[MiSnapStatus]` is available with ordered warnings from the highest to the lowest priority.
-                * an image passed all image quality analysis checks if `statuses` is an empty array
-            * `image` is available for preview
-            * `documentType` is available so that messages can be tailored for each document type if needed
+         * `statuses` of type `[MiSnapStatus]` is available with ordered warnings from the highest to the lowest priority.
+         * an image passed all image quality analysis checks if `statuses` is an empty array
+         * `image` is available for preview
+         * `documentType` is available so that messages can be tailored for each document type if needed
          
          IMPORTANT:
          
@@ -258,9 +291,76 @@ extension CustomTutorialViewController {
          that'll properly notify MiSnapViewController
          */
         
-        /* Uncomment to get MiSnap localized messages for given `statuses`.
-         Alternatively, create your own map from `[MiSnapStatus]` to a `[String]` */
-        //let messages = getLocalizedMessages(from: statuses)
+        // Image preview
+        if let image = image {
+            let imageView = UIImageView(image: image)
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.contentMode = .scaleAspectFit
+            imageView.layer.cornerRadius = 12
+            imageView.layer.masksToBounds = true
+            imageView.backgroundColor = .systemBackground
+            
+            view.addSubview(imageView)
+            
+            NSLayoutConstraint.activate([
+                imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+                imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+                imageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6)
+            ])
+        }
+        
+        // Buttons
+        let retakeButton = ("Retake", #selector(retryButtonAction(_:)))
+        let useThisButton = ("Use This", #selector(continueButtonAction(_:)))
+        let buttons = [retakeButton, useThisButton]
+        
+        let buttonViews = buttons.map { configureButton(withTitle: $0.0, selector: $0.1, frame: CGRect(x: 0, y: 0, width: 90, height: 40)) }
+        buttonViews.forEach { view.addSubview($0) }
+        
+        let offset: CGFloat = 30.0
+        
+        NSLayoutConstraint.activate([
+            buttonViews[0].bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -offset),
+            buttonViews[0].leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: offset),
+            
+            buttonViews[1].bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -offset),
+            buttonViews[1].rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -offset)
+        ])
+    }
+    
+    private func configureButton(withTitle title: String, selector: Selector, frame: CGRect) -> UIButton {
+        let button = UIButton(frame: frame)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 19.0, weight: .bold)
+        
+        button.addTarget(self, action: selector, for: .touchUpInside)
+        
+        NSLayoutConstraint.activate([
+            button.widthAnchor.constraint(equalToConstant: button.frame.width),
+            button.heightAnchor.constraint(equalToConstant: button.frame.height)
+        ])
+        
+        return button
+    }
+    
+    private func configureLabel(withText text: String) -> UILabel {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width * 0.9, height: 100))
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = text
+        label.font = .systemFont(ofSize: 25, weight: .bold)
+        label.numberOfLines = 3
+        label.textColor = .label
+        label.textAlignment = .center
+        
+        NSLayoutConstraint.activate([
+            label.widthAnchor.constraint(equalToConstant: label.frame.width),
+            label.heightAnchor.constraint(equalToConstant: label.frame.height)
+        ])
+        
+        return label
     }
 }
 

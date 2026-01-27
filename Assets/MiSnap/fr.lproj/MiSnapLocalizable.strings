@@ -35,28 +35,28 @@
 
 // Hint Messages
 "misnap_status_none"                        = "";
-"misnap_status_too_much_glare"              = "Reflet détecté";
-"misnap_status_not_identity_front"          = "Utiliser le recto d'une pièce d'identité valide";
-"misnap_status_not_identity_back"           = "Utiliser le dos d'une pièce d'identité valide";
-"misnap_status_not_passport"                = "Utiliser la page bio du passeport";
-"misnap_status_mrz_obstructed"              = "Le texte en bas doit être visible";
-"misnap_status_low_contrast"                = "Contraste insuffisant";
-"misnap_status_busy_background"             = "Arrière-plan trop chargé";
+"misnap_status_too_much_glare"              = "Trop de reflets sur le document";
+"misnap_status_not_identity_front"          = "Utilisez le recto du document d’identité";
+"misnap_status_not_identity_back"           = "Utilisez le verso du document d’identité";
+"misnap_status_not_passport"                = "Utilisez la page photo du passeport";
+"misnap_status_mrz_obstructed"              = "Les lignes de texte en bas doivent être visibles";
+"misnap_status_low_contrast"                = "L’arrière-plan n’est pas assez sombre";
+"misnap_status_busy_background"             = "L’arrière-plan est trop chargé";
 "misnap_status_not_check_front"             = "Utilisez le recto du chèque";
 "misnap_status_not_check_back"              = "Utilisez le verso du chèque";
-"misnap_status_document_not_found"          = "Contraste insuffisant";
-"misnap_status_document_not_found_mrz"      = "Le texte en bas doit être visible";
+"misnap_status_document_not_found"          = "Document pas encore détecté";
+"misnap_status_document_not_found_mrz"      = "Les lignes de texte en bas doivent être visibles";
 "misnap_status_not_sharp"                   = "Mise au point";
-"misnap_status_too_rotated"                 = "Document non aligné";
-"misnap_status_too_skewed"                  = "Document non aligné";
+"misnap_status_too_rotated"                 = "Angle trop important";
+"misnap_status_too_skewed"                  = "Angle trop important";
 "misnap_status_too_far"                     = "Trop éloigné";
 "misnap_status_too_close"                   = "Trop proche";
 "misnap_status_too_dark"                    = "Pas assez de lumière";
-"misnap_status_too_bright"                  = "Trop lumineux";
-"misnap_status_wrong_aspect_ratio"          = "Arrière-plan trop chargé";
+"misnap_status_too_bright"                  = "Trop de lumière";
+"misnap_status_wrong_aspect_ratio"          = "Document pas encore détecté";
 "misnap_status_classification_in_progress"  = "Document détecté, veuillez patienter";
 "misnap_status_good"                        = "Document détecté, veuillez patienter";
-"misnap_status_good_manual"                 = "Appuyer";
+"misnap_status_good_manual"                 = "Appuyez maintenant";
 
 // Tutorial
 "misnap_tutorial_do_not_show_again"     = "Ne plus afficher ce même écran";
@@ -66,7 +66,7 @@
 "misnap_tutorial_cancel"                = "Annuler";
 "misnap_tutorial_back"                  = "Retour";
 "misnap_tutorial_continue"              = "Continuer";
-"misnap_tutorial_try_again"             = "Réessayer Automatiquement";
+"misnap_tutorial_try_again"             = "Réessayer automatiquement";
 "misnap_tutorial_capture_manually"      = "Prendre manuellement";
 "misnap_tutorial_retake"                = "Reprendre";
 "misnap_tutorial_continue_review"       = "Cela semble bon";
@@ -88,9 +88,23 @@
 
 "misnap_tutorial_timeout_header"        = "Le temps est écoulé, nous n\'avons pas pu prendre votre photo…";
 
-
+// Accesibility labels for an image in the Review screen
+// Note, it's not displayed on a screen but announced when VoiceOver is enabled
 "misnap_tutorial_review_check"          = "L'image du chèque est affichée à l'écran. Demandez de l'aide si vous souhaitez que l'image soit vérifiée ou acceptez-la en cliquant sur le bouton.";
 "misnap_tutorial_review_document"       = "L'image du document est affichée à l'écran. Demandez de l'aide si vous souhaitez la consulter ou acceptez en cliquant sur le bouton.";
+
+// Extended Tutorial for visually impaired users
+"misnap_tutorial_do_not_show_again_extended"    = "Ne présentez plus ces instructions";
+"misnap_tutorial_continue_extended"             = "Continuer";
+"misnap_tutorial_start_session_extended"        = "Démarrer Une Session";
+// Note, if you changed a default value `Continue` in `misnap_tutorial_continue_extended`, make sure to change the value in this message too
+"misnap_tutorial_message_extended_1"            = "La capture d’un document peut être difficile. Une série d’écrans d’instructions sera présentée afin d’augmenter vos chances de réussite. Vous pouvez rester sur chaque écran et réécouter les instructions autant de fois que nécessaire. Lorsque vous êtes prêt, appuyez sur le bouton Continuer de cet écran pour passer au suivant.";
+"misnap_tutorial_message_extended_2"            = "Commencez par vérifier que l’éclairage est optimal. Placez-vous dans un endroit bien éclairé, tout en évitant la lumière directe afin de prévenir les reflets sur le document. Si des indications signalent la présence de reflets sur le document, inclinez légèrement le document vers la caméra.";
+"misnap_tutorial_message_extended_3"            = "Placez le document à plat devant vous, approximativement à hauteur de la taille. Orientez-le de manière à ce que le côté le plus long soit disposé de gauche à droite. Cela peut être fait en posant le document sur vos genoux en position assise, ou en le plaçant sur une table ou un plan de travail situé à environ hauteur de la taille lorsque vous êtes debout.";
+"misnap_tutorial_message_extended_4"            = "Placez votre appareil à plat sur le document, avec l’écran orienté vers le haut. Faites glisser le téléphone jusqu’à ce que le bord long de l’appareil touche le bord long supérieur du document. Assurez-vous que les bords sont droits et correctement alignés.";
+"misnap_tutorial_message_extended_5"            = "Au démarrage de la session, soulevez lentement l’appareil bien droit. Maintenez l’appareil stable et bien équilibré. Suivez les indications vocales.";
+"misnap_tutorial_message_extended_6"            = "Si une indication signale que l’appareil est trop éloigné, rapprochez-le lentement du document. S’il est trop proche, éloignez-le lentement du document.";
+"misnap_tutorial_message_extended_7"            = "Si une indication signale que le document n’est pas détecté, soulevez légèrement l’appareil puis inclinez-le très légèrement dans différentes directions. Si la capture n’a pas abouti, ramenez l’appareil à la position de départ et recommencez.";
 
 // Failover Reasons
 "misnap_status_too_dark_timeout"                = "Placez le document sur une surface bien éclairée";
