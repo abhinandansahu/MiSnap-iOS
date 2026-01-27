@@ -133,7 +133,7 @@
 				42A13F90296E13BE007E7252 /* MiSnap */,
 			);
 			name = Assets;
-			path = ../../../../../Assets;
+			path = ../../../../../../Assets;
 			sourceTree = "<group>";
 		};
 		42A13F90296E13BE007E7252 /* MiSnap */ = {

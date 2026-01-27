@@ -128,7 +128,7 @@
 				42A14048296E1948007E7252 /* MiSnap */,
 			);
 			name = Assets;
-			path = ../../../../../Assets;
+			path = ../../../../../../Assets;
 			sourceTree = "<group>";
 		};
 		42A14048296E1948007E7252 /* MiSnap */ = {

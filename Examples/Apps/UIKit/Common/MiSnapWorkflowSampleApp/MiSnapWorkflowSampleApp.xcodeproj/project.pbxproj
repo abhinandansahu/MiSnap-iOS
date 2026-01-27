@@ -253,7 +253,7 @@
 				42A14287296E2CA2007E7252 /* MiSnapVoiceCapture */,
 			);
 			name = Assets;
-			path = ../../../../Assets;
+			path = ../../../../../Assets;
 			sourceTree = "<group>";
 		};
 		42A14264296E2CA1007E7252 /* MiSnap */ = {
@@ -380,7 +380,7 @@
 				42A8A773291A829C00CE54AD /* MitekPlatform.swift */,
 			);
 			name = MitekPlatform;
-			path = ../../../../SDKs/Common/MitekPlatform;
+			path = ../../../../../SDKs/Common/MitekPlatform;
 			sourceTree = "<group>";
 		};
 		42A8A774291A829D00CE54AD /* MitekRequest */ = {
@@ -391,7 +391,7 @@
 				42A8A776291A829D00CE54AD /* MiPassRequest.swift */,
 			);
 			name = MitekRequest;
-			path = ../../../../SDKs/Common/MitekRequest;
+			path = ../../../../../SDKs/Common/MitekRequest;
 			sourceTree = "<group>";
 		};
 		42A8A777291A829E00CE54AD /* MiSnapWorkflow */ = {
@@ -402,7 +402,7 @@
 				42A8A77A291A829E00CE54AD /* MiSnapWorkflowViewController.swift */,
 			);
 			name = MiSnapWorkflow;
-			path = ../../../../SDKs/Common/MiSnapWorkflow;
+			path = ../../../../../SDKs/Common/MiSnapWorkflow;
 			sourceTree = "<group>";
 		};
 		42ED46EF238C0C8300740A77 = {

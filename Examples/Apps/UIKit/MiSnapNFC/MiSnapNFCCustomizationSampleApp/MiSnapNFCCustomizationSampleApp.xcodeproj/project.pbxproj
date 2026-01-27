@@ -137,7 +137,7 @@
 				42A14233296E2A9B007E7252 /* MiSnapNFC */,
 			);
 			name = Assets;
-			path = ../../../../../Assets;
+			path = ../../../../../../Assets;
 			sourceTree = "<group>";
 		};
 		42A14233296E2A9B007E7252 /* MiSnapNFC */ = {

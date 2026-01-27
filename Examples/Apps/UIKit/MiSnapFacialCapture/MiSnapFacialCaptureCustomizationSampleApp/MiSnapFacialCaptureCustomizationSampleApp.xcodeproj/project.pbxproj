@@ -127,7 +127,7 @@
 				42A14105296E265E007E7252 /* MiSnapFacialCapture */,
 			);
 			name = Assets;
-			path = ../../../../../Assets;
+			path = ../../../../../../Assets;
 			sourceTree = "<group>";
 		};
 		42A14105296E265E007E7252 /* MiSnapFacialCapture */ = {
