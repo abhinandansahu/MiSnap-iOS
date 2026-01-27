@@ -16,7 +16,7 @@ struct MiSnapViewControllerRepresentable: UIViewControllerRepresentable {
     let onCancelled: (MiSnapResult) -> Void
     let onExeption: (NSException) -> Void
     let onShouldBeDismissed: () -> Void
-    let onCustomTutorial: CustomTutorialHandler
+    let onCustomTutorial: CustomTutorialHandler?
     
     func makeCoordinator() -> Coordinator {
         Coordinator(
@@ -35,7 +35,7 @@ struct MiSnapViewControllerRepresentable: UIViewControllerRepresentable {
         let onCancelled: (MiSnapResult) -> Void
         let onExeption: (NSException) -> Void
         let onShouldBeDismissed: () -> Void
-        let onCustomTutorial: CustomTutorialHandler
+        let onCustomTutorial: CustomTutorialHandler?
         weak var miSnapViewController: MiSnapViewController?
         
         init(
@@ -44,7 +44,7 @@ struct MiSnapViewControllerRepresentable: UIViewControllerRepresentable {
             onCancelled: @escaping (MiSnapResult) -> Void,
             onExeption: @escaping (NSException) -> Void,
             onShouldBeDismissed: @escaping () -> Void,
-            onCustomTutorial: @escaping CustomTutorialHandler
+            onCustomTutorial: CustomTutorialHandler?
         ) {
             self.onLicenseStatus = onLicenseStatus
             self.onSuccess = onSuccess
@@ -79,7 +79,7 @@ struct MiSnapViewControllerRepresentable: UIViewControllerRepresentable {
                                   mode: MiSnapMode,
                                   statuses: [NSNumber]?,
                                   image: UIImage?) {
-            onCustomTutorial(documentType, tutorialMode, mode, statuses, image, miSnapViewController)
+            onCustomTutorial?(documentType, tutorialMode, mode, statuses, image, miSnapViewController)
         }
     }
     

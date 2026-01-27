@@ -61,7 +61,7 @@ struct DocumentsView: View {
             onCancelled: viewModel.handleCancellation,
             onExeption: viewModel.handleExeption,
             onShouldBeDismissed: viewModel.handleDismiss,
-            onCustomTutorial: viewModel.handleCustomTutorial
+            onCustomTutorial: viewModel.handleCustomTutorial(for: preset)
         )
         .background(Color.black)
         .ignoresSafeArea()

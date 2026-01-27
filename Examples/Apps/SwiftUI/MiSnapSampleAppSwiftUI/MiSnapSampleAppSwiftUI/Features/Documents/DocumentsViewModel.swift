@@ -177,8 +177,14 @@ class DocumentsViewModel: ObservableObject {
         // Log the exception and potentially show an error alert
     }
     
+    func handleCustomTutorial(for preset: DocumentPreset) -> CustomTutorialHandler? {
+        // Return custom tutorial handler for `.customIDFront` preset or nil otherwise
+        guard preset == .customIDFront else { return nil }
+        return presentCustomTutorial
+    }
+    
     // swiftlint:disable:next function_parameter_count
-    func handleCustomTutorial(
+    private func presentCustomTutorial(
         _ documentType: MiSnapScienceDocumentType,
         _ tutorialMode: MiSnapUxTutorialMode,
         _ mode: MiSnapMode,
