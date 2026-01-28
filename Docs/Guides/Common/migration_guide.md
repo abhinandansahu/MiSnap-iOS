@@ -1,6 +1,62 @@
 # Migration Guide
 
 Depending on the version you’re upgrading from, you might need to review several sections below.
+## Migration guide for 5.10.0 and newer versions
+
+### 1. Accessibility improvements for visually impaired users
+
+Starting with 5.10.0, MiSnap provides enhanced accessibility features when VoiceOver is enabled:
+* A new multi-page tutorial is presented to help visually impaired users understand how to capture documents
+* Non-unique hints are announced but spaced 5 seconds apart to avoid overwhelming the user
+* Some thresholds are made more lenient to improve success rates
+* Hints have been updated with clearer wording
+
+These improvements are automatic and require no configuration changes.
+
+### 2. New localizable keys for extended VoiceOver tutorial
+
+The following localizable keys were added to `MiSnapLocalizable.strings`:
+
+| Key | Description |
+| :--- | :--- |
+| misnap_tutorial_do_not_show_again_extended | Checkbox label for skipping extended instructions |
+| misnap_tutorial_continue_extended | Continue button label |
+| misnap_tutorial_start_session_extended | Start session button label |
+| misnap_tutorial_message_extended_1 | Introduction message |
+| misnap_tutorial_message_extended_2 | Lighting instructions |
+| misnap_tutorial_message_extended_3 | Document placement instructions |
+| misnap_tutorial_message_extended_4 | Device positioning instructions |
+| misnap_tutorial_message_extended_5 | Session start instructions |
+| misnap_tutorial_message_extended_6 | Distance adjustment instructions |
+| misnap_tutorial_message_extended_7 | Troubleshooting instructions |
+
+### 3. Updated hint messages
+
+Several hint message values were updated for clarity. If you have customized these values, review and update as needed:
+
+| MiSnapLocalizable |
+| Key | Old value | New value |
+| :--- | :--- | :--- |
+| misnap_status_too_much_glare | Glare detected | Too much glare on document |
+| misnap_status_mrz_obstructed | Bottom text should be visible | Bottom text lines should be visible |
+| misnap_status_low_contrast | Not enough contrast | Background not dark enough |
+| misnap_status_document_not_found | Not enough contrast | Document not found yet |
+| misnap_status_document_not_found_mrz | Bottom text should be visible | Bottom text lines should be visible |
+| misnap_status_too_rotated | Document not aligned | Angle too large |
+| misnap_status_too_skewed | Document not aligned | Angle too large |
+| misnap_status_too_bright | Too bright | Too much light |
+| misnap_status_wrong_aspect_ratio | Background too busy | Document not found yet |
+
+### 4. New `skipDefaultTutorial()` API for selective custom tutorials
+
+Starting with 5.10.0, integrators can now selectively override individual tutorial screens while keeping default behavior for others. A new public API `skipDefaultTutorial()` was added to `MiSnapViewController`.
+
+Previously, to use custom tutorials, integrators had to override `useCustomTutorials` to `true` and implement all four tutorial screens (instruction, help, timeout, review). Now, integrators can:
+* Implement `miSnapCustomTutorial(_:tutorialMode:mode:statuses:image:)` callback
+* Call `skipDefaultTutorial()` only for specific tutorial modes they want to customize
+* Let default tutorials be presented for other modes
+
+Note: Existing implementations using `useCustomTutorials = true` are not impacted. For detailed usage examples, see the [Customization Guide](../MiSnap/customization_guide.md#tutorial-callbacks).
 
 ## Migration guide for 5.9.0 and newer versions
 

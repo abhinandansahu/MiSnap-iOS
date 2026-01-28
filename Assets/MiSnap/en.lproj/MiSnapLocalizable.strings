@@ -35,25 +35,25 @@
 
 // Hint Messages
 "misnap_status_none"                        = "";
-"misnap_status_too_much_glare"              = "Glare detected";
+"misnap_status_too_much_glare"              = "Too much glare on document";
 "misnap_status_not_identity_front"          = "Use front of identity document";
 "misnap_status_not_identity_back"           = "Use back of identity document";
 "misnap_status_not_passport"                = "Use the passport photo page";
-"misnap_status_mrz_obstructed"              = "Bottom text should be visible";
-"misnap_status_low_contrast"                = "Not enough contrast";
+"misnap_status_mrz_obstructed"              = "Bottom text lines should be visible";
+"misnap_status_low_contrast"                = "Background not dark enough";
 "misnap_status_busy_background"             = "Background too busy";
 "misnap_status_not_check_front"             = "Use front of check";
 "misnap_status_not_check_back"              = "Use back of check";
-"misnap_status_document_not_found"          = "Not enough contrast";
-"misnap_status_document_not_found_mrz"      = "Bottom text should be visible";
+"misnap_status_document_not_found"          = "Document not found yet";
+"misnap_status_document_not_found_mrz"      = "Bottom text lines should be visible";
 "misnap_status_not_sharp"                   = "Focusing";
-"misnap_status_too_rotated"                 = "Document not aligned";
-"misnap_status_too_skewed"                  = "Document not aligned";
+"misnap_status_too_rotated"                 = "Angle too large";
+"misnap_status_too_skewed"                  = "Angle too large";
 "misnap_status_too_far"                     = "Too far away";
 "misnap_status_too_close"                   = "Too close";
 "misnap_status_too_dark"                    = "Not enough light";
-"misnap_status_too_bright"                  = "Too bright";
-"misnap_status_wrong_aspect_ratio"          = "Background too busy";
+"misnap_status_too_bright"                  = "Too much light";
+"misnap_status_wrong_aspect_ratio"          = "Document not found yet";
 "misnap_status_classification_in_progress"  = "Document found, wait";
 "misnap_status_good"                        = "Document found, wait";
 "misnap_status_good_manual"                 = "Tap now";
@@ -88,8 +88,23 @@
 
 "misnap_tutorial_timeout_header"        = "Time's up, we couldn't take your photo…";
 
+// Accesibility labels for an image in the Review screen
+// Note, it's not displayed on a screen but announced when VoiceOver is enabled
 "misnap_tutorial_review_check"          = "Image of the check is on the screen. Seek assistance if you would like the image reviewed, or accept with the button.";
 "misnap_tutorial_review_document"       = "Image of the document is on the screen. Seek assistance if you would like the image reviewed, or accept with the button.";
+
+// Extended Tutorial for visually impaired users
+"misnap_tutorial_do_not_show_again_extended"    = "Don't present these instructions again";
+"misnap_tutorial_continue_extended"             = "Continue";
+"misnap_tutorial_start_session_extended"        = "Start Session";
+// Note, if you changed a default value `Continue` in `misnap_tutorial_continue_extended`, make sure to change the value in this message too
+"misnap_tutorial_message_extended_1"            = "Capturing a document can be challenging. We will present a series of instructional screens to help improve your chances of success. You may stay on each screen and replay the instructions as many times as you need. When you’re ready, press the Continue button on that screen to move to the next one.";
+"misnap_tutorial_message_extended_2"            = "First, let’s make sure you have optimal lighting. Be in a well-lit area, but avoid direct light to prevent reflections on the document. If you hear hints saying there is glare on your document, tilt the document slightly toward the camera.";
+"misnap_tutorial_message_extended_3"            = "Place the document flat in front of you, close to waist level. Rotate it so the longer edge runs left to right. This can be achieved by placing the document on your lap while sitting, or by placing it on a table or countertop that is about waist height while standing.";
+"misnap_tutorial_message_extended_4"            = "Place your device flat on top of the document with the screen facing up. Slide the phone until the long edge of the device is touching the top long edge of the document. Make sure the edges feel straight and aligned.";
+"misnap_tutorial_message_extended_5"            = "When the session starts, lift the device straight up slowly. Hold the device steady and balanced. Follow verbal hints.";
+"misnap_tutorial_message_extended_6"            = "If you receive an indication that the device is too far, move it slowly toward the document. If it's too close, move it slowly away from the document.";
+"misnap_tutorial_message_extended_7"            = "If you receive an indication that the document is not found, lift the device a bit higher then tilt it very lightly in different directions. If you couldn’t get a successful capture, bring the device back to the starting position and start again.";
 
 // Failover Reasons
 "misnap_status_too_dark_timeout"                = "Place the document in a well-lit area";

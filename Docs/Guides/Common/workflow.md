@@ -1,6 +1,9 @@
 # MiSnapWorkflow Integration and Customization Guide
 
-Please refer to [MiSnapWorkflowSampleApp](../../../Examples/Apps/Common/MiSnapWorkflowSampleApp) as a working example created by following steps below. 
+Please refer to [MiSnapWorkflowSampleApp](../../../Examples/Apps/UIKit/Common/MiSnapWorkflowSampleApp) as a working example created by following steps below. 
+
+For SwiftUI integration, refer to [MiSnapSampleAppSwiftUI](../../../Examples/Apps/SwiftUI/MiSnapSampleAppSwiftUI).
+
 Specifically, `ViewController.swift` shows how with a few lines of code you can setup and launch `MiSnapWorkflowViewController` for:
 * MobileVerify:
     * Passport --> (optional) NFC --> Face

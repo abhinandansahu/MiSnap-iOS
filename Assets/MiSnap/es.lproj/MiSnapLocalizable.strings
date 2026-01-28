@@ -35,27 +35,27 @@
 
 // Hint Messages
 "misnap_status_none"                        = "";
-"misnap_status_too_much_glare"              = "Reflejo detectado";
-"misnap_status_not_identity_front"          = "Utilice el frente de un documento de identidad válido";
-"misnap_status_not_identity_back"           = "Utilice el reverso de un documento de identidad válido";
-"misnap_status_not_passport"                = "Usar la página de biografía del pasaporte";
-"misnap_status_mrz_obstructed"              = "El texto inferior debe ser visible";
-"misnap_status_low_contrast"                = "No hay suficiente contraste";
-"misnap_status_busy_background"             = "Demasiado contenido en el fondo";
-"misnap_status_not_check_front"             = "Usa el frente del cheque";
-"misnap_status_not_check_back"              = "Usa el reverso del cheque";
-"misnap_status_document_not_found"          = "No hay suficiente contraste";
-"misnap_status_document_not_found_mrz"      = "El texto inferior debe ser visible";
+"misnap_status_too_much_glare"              = "Demasiado brillo en el documento";
+"misnap_status_not_identity_front"          = "Use el anverso de un documento de identidad";
+"misnap_status_not_identity_back"           = "Use el reverso de un documento de identidad";
+"misnap_status_not_passport"                = "Use la página biografía del pasaporte";
+"misnap_status_mrz_obstructed"              = "Las líneas de texto inferiores deben ser visibles";
+"misnap_status_low_contrast"                = "El fondo no es lo suficientemente oscuro";
+"misnap_status_busy_background"             = "El fondo está demasiado cargado";
+"misnap_status_not_check_front"             = "Use el anverso del cheque";
+"misnap_status_not_check_back"              = "Use el reverso del cheque";
+"misnap_status_document_not_found"          = "Documento aún no detectado";
+"misnap_status_document_not_found_mrz"      = "Las líneas de texto inferiores deben ser visibles";
 "misnap_status_not_sharp"                   = "Enfocando";
-"misnap_status_too_rotated"                 = "Documento no alineado";
-"misnap_status_too_skewed"                  = "Documento no alineado";
+"misnap_status_too_rotated"                 = "El ángulo es demasiado grande";
+"misnap_status_too_skewed"                  = "El ángulo es demasiado grande";
 "misnap_status_too_far"                     = "Demasiado lejos";
 "misnap_status_too_close"                   = "Demasiado cerca";
 "misnap_status_too_dark"                    = "No hay suficiente luz";
-"misnap_status_too_bright"                  = "Demasiado brillo";
-"misnap_status_wrong_aspect_ratio"          = "Demasiado contenido en el fondo";
-"misnap_status_classification_in_progress"  = "Documento detectado, espera";
-"misnap_status_good"                        = "Documento detectado, espera";
+"misnap_status_too_bright"                  = "Demasiada luz";
+"misnap_status_wrong_aspect_ratio"          = "Documento aún no detectado";
+"misnap_status_classification_in_progress"  = "Documento detectado, espere";
+"misnap_status_good"                        = "Documento detectado, espere";
 "misnap_status_good_manual"                 = "Pulse ahora";
 
 // Tutorial
@@ -88,8 +88,23 @@
 
 "misnap_tutorial_timeout_header"        = "Se acabó el tiempo, no pudimos tomar su foto…";
 
+// Accesibility labels for an image in the Review screen
+// Note, it's not displayed on a screen but announced when VoiceOver is enabled
 "misnap_tutorial_review_check"          = "La imagen del cheque está en la pantalla. Solicita ayuda si deseas que se revise la imagen, o acéptala con el botón.";
 "misnap_tutorial_review_document"       = "La imagen del documento está en la pantalla. Solicita ayuda si deseas que se revise la imagen, o acéptala con el botón.";
+
+// Extended Tutorial for visually impaired users
+"misnap_tutorial_do_not_show_again_extended"    = "No vuelvas a mostrar estas instrucciones";
+"misnap_tutorial_continue_extended"             = "Continuar";
+"misnap_tutorial_start_session_extended"        = "Iniciar Una Sesión";
+// Note, if you changed a default value `Continue` in `misnap_tutorial_continue_extended`, make sure to change the value in this message too
+"misnap_tutorial_message_extended_1"            = "La captura de un documento puede resultar complicada. Se mostrará una serie de pantallas con instrucciones para ayudar a mejorar las posibilidades de éxito. Puedes permanecer en cada pantalla y volver a reproducir las instrucciones tantas veces como sea necesario. Cuando estés listo, pulsa el botón Continuar de esa pantalla para pasar a la siguiente.";
+"misnap_tutorial_message_extended_2"            = "Primero, asegúrate de que la iluminación sea óptima. Sitúate en un lugar bien iluminado, pero evita la luz directa para prevenir reflejos en el documento. Si escuchas indicaciones de que hay reflejos en el documento, inclina ligeramente el documento hacia la cámara.";
+"misnap_tutorial_message_extended_3"            = "Coloca el documento en posición plana delante de ti, aproximadamente a la altura de la cintura. Gíralo para que el lado más largo quede de izquierda a derecha. Esto puede lograrse colocando el documento sobre tu regazo mientras estás sentado, o colocándolo sobre una mesa o encimera que esté aproximadamente a la altura de la cintura mientras estás de pie.";
+"misnap_tutorial_message_extended_4"            = "Coloca el dispositivo en posición plana encima del documento, con la pantalla hacia arriba. Desliza el teléfono hasta que el lado largo del dispositivo toque el borde largo superior del documento. Asegúrate de que los bordes se noten rectos y alineados.";
+"misnap_tutorial_message_extended_5"            = "Cuando comience la sesión, levanta el dispositivo lentamente en línea recta. Mantén el dispositivo estable y equilibrado. Sigue las indicaciones verbales.";
+"misnap_tutorial_message_extended_6"            = "Si recibes una indicación de que el dispositivo está demasiado lejos, acércalo lentamente al documento. Si está demasiado cerca, aléjalo lentamente del documento.";
+"misnap_tutorial_message_extended_7"            = "Si recibes una indicación de que no se encuentra el documento, levanta el dispositivo un poco más y luego inclínalo muy ligeramente en distintas direcciones. Si no se consigue una captura satisfactoria, vuelve a colocar el dispositivo en la posición inicial y vuelve a intentarlo.";
 
 // Failover Reasons
 "misnap_status_too_dark_timeout"                = "Coloca el documento en una superficie bien iluminada";

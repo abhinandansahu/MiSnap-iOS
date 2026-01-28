@@ -164,8 +164,13 @@
             <h1>MiSnapScienceIdBackMode</h1>
               <div class="declaration">
                 <div class="language">
-                  
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">MiSnapScienceIdBackMode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">MiSnapScienceIdBackMode</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kd">@unchecked</span> <span class="kt">Sendable</span></code></pre>
 
                 </div>
               </div>
@@ -208,6 +213,11 @@ a barcode will be optionally returned in case if it was read/scanned by that poi
                           <pre class="highlight objective_c"><code><span class="n">MiSnapScienceIdBackModeAcceptableImageRequiredBarcodeOptional</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">acceptableImageRequiredBarcodeOptional</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -240,6 +250,11 @@ a barcode is read/scanned.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="n">MiSnapScienceIdBackModeAcceptableImageRequiredBarcodeRequired</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">acceptableImageRequiredBarcodeRequired</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
                       </div>
@@ -276,6 +291,11 @@ an image used for reading/scanning that may or may not pass IQA is returned.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="n">MiSnapScienceIdBackModeAcceptableImageOptionalBarcodeRequired</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">acceptableImageOptionalBarcodeRequired</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
 
                         </div>
                       </div>

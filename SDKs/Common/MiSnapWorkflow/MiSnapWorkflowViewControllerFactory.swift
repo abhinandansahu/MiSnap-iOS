@@ -46,11 +46,23 @@ class MiSnapWorkflowViewControllerFactory {
         let configuration: MiSnapConfiguration
         switch step {
         case .idFront:
-            configuration = MiSnapConfiguration(for: .idFront).applying(template)
+            configuration = MiSnapConfiguration(for: .idFront)
+                .applying(template)
+                .withCustomParameters { parameters in
+                    parameters.science.orientationMode = .devicePortraitGuidePortrait
+                }
         case .idBack:
-            configuration = MiSnapConfiguration(for: .idBack).applying(template)
+            configuration = MiSnapConfiguration(for: .idBack)
+                .applying(template)
+                .withCustomParameters { parameters in
+                    parameters.science.orientationMode = .devicePortraitGuidePortrait
+                }
         case .passport:
-            configuration = MiSnapConfiguration(for: .passport).applying(template)
+            configuration = MiSnapConfiguration(for: .passport)
+                .applying(template)
+                .withCustomParameters { parameters in
+                    parameters.science.orientationMode = .devicePortraitGuidePortrait
+                }
         case .passportQr:
             configuration = MiSnapConfiguration(for: .idBack)
                 .withCustomTutorial { tutorial in
@@ -70,9 +82,17 @@ class MiSnapWorkflowViewControllerFactory {
                     parameters.science.documentTypeName = "QR Code"
                 }
         case .checkFront:
-            configuration = MiSnapConfiguration(for: .checkFront).applying(depositTemplate)
+            configuration = MiSnapConfiguration(for: .checkFront)
+                .applying(depositTemplate)
+                .withCustomParameters { parameters in
+                    parameters.science.orientationMode = .devicePortraitGuidePortrait
+                }
         case .checkBack:
-            configuration = MiSnapConfiguration(for: .checkBack).applying(depositTemplate)
+            configuration = MiSnapConfiguration(for: .checkBack)
+                .applying(depositTemplate)
+                .withCustomParameters { parameters in
+                    parameters.science.orientationMode = .devicePortraitGuidePortrait
+                }
         default:
             fatalError("\(step) is not handled in MiSnapWorkflowViewControllerFactory.buildMiSnapVC(_:delegate:)")
         }
@@ -156,7 +176,7 @@ class MiSnapWorkflowViewControllerFactory {
         #endif
         #if canImport(MiSnapUX) && canImport(MiSnap)
         case .passport, .checkFront, .checkBack:
-            return .landscape
+            return .all
         #endif
         default:        
             return .all

@@ -148,7 +148,6 @@ import _SwiftConcurrencyShims
     @objc get
   }
   @objc public class func destroyShared()
-  @objc public static var configuration: MiSnapCore.MiSnapLogConfiguration
   @objc public func verbose(_ msg: Swift.String)
   @objc public func debug(_ msg: Swift.String)
   @objc public func info(_ msg: Swift.String)

@@ -169,6 +169,10 @@ import _SwiftConcurrencyShims
   @objc public var injectImageName: Swift.String?
   @objc public var showCancelAlert: Swift.Bool
   @objc public var navigationBarHidden: Swift.Bool
+  @objc public var enableAccessibilityTutorials: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc public var dictionary: [Swift.String : Any] {
     @objc get
   }
@@ -197,6 +201,7 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
+  @objc public var announceAll: Swift.Bool
   @objc public var dictionary: [Swift.String : Swift.String] {
     @objc get
   }
@@ -325,6 +330,7 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) public func shutdown()
+  @_Concurrency.MainActor(unsafe) public func skipDefaultTutorial()
   @objc deinit
 }
 extension MiSnapViewController {
