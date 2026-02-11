@@ -330,6 +330,7 @@
                 <div class="language">
                   
                   <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">@MainActor</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="kt">MiSnapVoiceCaptureStatusView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
 
                 </div>
@@ -364,6 +365,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">@MainActor</span>
 <span class="kd">public</span> <span class="k">var</span> <span class="nv">diameter</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
@@ -392,6 +394,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">@MainActor</span>
 <span class="kd">public</span> <span class="k">var</span> <span class="nv">animationColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
@@ -420,6 +423,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">@MainActor</span>
 <span class="kd">public</span> <span class="k">var</span> <span class="nv">animationTime</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
@@ -447,7 +451,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapVoiceCaptureViewStatus.html">MiSnapVoiceCaptureViewStatus</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapVoiceCaptureViewStatus.html">MiSnapVoiceCaptureViewStatus</a></span><span class="p">,</span>
             <span class="nv">neutralConfiguration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapVoiceCaptureNeutralViewConfiguration.html">MiSnapVoiceCaptureNeutralViewConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
             <span class="nv">successConfiguration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapVoiceCaptureSuccessViewConfiguration.html">MiSnapVoiceCaptureSuccessViewConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
             <span class="nv">failureConfiguration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapVoiceCaptureFailureViewConfiguration.html">MiSnapVoiceCaptureFailureViewConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
@@ -479,6 +484,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">@MainActor</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="k">for</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapVoiceCaptureViewStatus.html">MiSnapVoiceCaptureViewStatus</a></span><span class="p">)</span></code></pre>
 
                         </div>

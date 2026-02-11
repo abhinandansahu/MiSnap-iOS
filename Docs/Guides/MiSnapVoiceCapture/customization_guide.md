@@ -1,4 +1,4 @@
-Please refer to [MiSnapVoiceCaptureCustomizationSampleApp](../../../Examples/Apps/MiSnapVoiceCapture/MiSnapVoiceCaptureCustomizationSampleApp) as a working customization example.
+Please refer to [MiSnapVoiceCaptureCustomizationSampleApp](../../../Examples/Apps/UIKit/MiSnapVoiceCapture/MiSnapVoiceCaptureCustomizationSampleApp) as a working customization example.
 
 # Customization Guide
 

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Mitek Systems Inc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /**
  Document type

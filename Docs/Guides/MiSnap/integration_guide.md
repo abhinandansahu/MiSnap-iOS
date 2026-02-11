@@ -2,7 +2,9 @@
 
 :warning: MiSnap 5.x has breaking API changes therefore to migrate from 3.x and 4.x series, remove all old MiSnap references from your project.
 
-[MiSnapSampleApp](../../../Examples/Apps/MiSnap/MiSnapSampleApp) was created by following steps below. Please refer to this project as a working example.
+[MiSnapSampleApp](../../../Examples/Apps/UIKit/MiSnap/MiSnapSampleApp) was created by following steps below. Please refer to this project as a working example.
+
+For SwiftUI integration, refer to [MiSnapSampleAppSwiftUI](../../../Examples/Apps/SwiftUI/MiSnapSampleAppSwiftUI).
 
 ## 1. Obtain the SDK(s)
 MiSnap 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:
@@ -179,5 +181,8 @@ Note, if `autoDismiss` of `MiSnapUXParameters` is overridden to `false`, a paren
 ```Swift
 func miSnapShouldBeDismissed() {
     // Dismiss MiSnapViewController here
+}
+```
+For advanced tutorial customization including analytics tracking and selective custom tutorials, implement the optional `miSnapCustomTutorial(_:tutorialMode:mode:statuses:image:)` callback. See [Tutorial Callbacks](customization_guide.md#tutorial-callbacks) in the Customization Guide for detailed usage examples.
 }
 ```
